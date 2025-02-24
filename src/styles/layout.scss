@@ -1,0 +1,20 @@
+@use "@/styles/mixins"as *;
+
+.layout-center {
+    @include layout-position(center, center);
+}
+
+.layout-right-center {
+    @include layout-position(right, center);
+}
+
+.layout-left-center {
+    @include layout-position(left, center);
+}
+
+.layout-centered-axis-xy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

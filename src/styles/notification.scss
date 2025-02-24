@@ -1,0 +1,31 @@
+@use "@/styles/variables"as *;
+@use "@/styles/colors"as *;
+@use "@/styles/mixins"as *;
+
+.notification {
+    z-index: $z-index-default !important;
+
+    .success {
+        line-height: 1.2;
+        background-color: var(--notification-success-bg) !important;
+        border-left-color: var(--notification-success-border) !important;
+    }
+
+    .error {
+        line-height: 1.2;
+        background-color: var(--notification-error-bg) !important;
+        border-left-color: var(--notification-error-border) !important;
+    }
+
+    .notification-title {
+        @include font-montserrat(1rem, 600);
+        padding: $spacing-small 0 $spacing-small 0;
+        color: var(--notification-color);
+    }
+
+    .notification-content {
+        @include font-montserrat(0.875rem, 400);
+        padding: 0 0 $spacing-small 0;
+        color: var(--notification-color);
+    }
+}

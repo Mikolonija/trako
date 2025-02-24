@@ -1,0 +1,261 @@
+{
+    "menu": {
+        "home": "Pagrindinis",
+        "help": "Pagalba",
+        "settings": {
+            "main": "Nustatymai",
+            "theme": "Tema",
+            "darkMode": "Tamsus režimas (DM)",
+            "lightMode": "Šviesus režimas (LM)",
+            "language": "Kalba",
+            "languages": {
+                "en": "Anglų (EN)",
+                "lt": "Lietuvių (LT)"
+            }
+        }
+    },
+    "notFound": {
+        "title": "Puslapis Nerastas",
+        "message": "Atsiprašome, puslapis neegzistuoja. Jis galėjo būti perkeltas, ištrintas arba URL neteisingas. Patikrinkite adresą ir bandykite dar kartą arba grįžkite į pagrindinį puslapį.",
+        "btnText": "Grįžti į pagrindinį puslapį"
+    },
+    "infoCard": {
+        "title": "Kaip šiandien jautiesi?",
+        "description": "Sukurkite įprotį, į kurį norite sutelkti dėmesį šiandien, ir lengvai sekite savo pažangą.",
+        "btnText": "Sukurti įprotį"
+    },
+    "habitForm": {
+        "errors": {
+            "startTimeBeforeEndTime": "Pradžios laikas turi būti ankstesnis už pabaigos laiką.",
+            "startDateCurrentError": "Pradžios data negali būti ankstesnis nei dabartinė data.",
+            "endDateCurrentError": "Pabaigos data negali būti ankstesnis nei dabartinė data.",
+            "habitNameEmpty": "Įpročio pavadinimas negali būti tuščias.",
+            "invalidStartTime": "Pasirinkite galiojantį pradžios laiką.",
+            "habitNameLength": "Įpročio pavadinimas negali viršyti 255 simbolių."
+        },
+        "labels": {
+            "habitName": "Įpročio pavadinimas",
+            "startDate": "Pradžios data",
+            "endDate": "Pabaigos data",
+            "startTime": "Pradžios laikas",
+            "endTime": "Pabaigos laikas",
+            "repeat": {
+                "every": "Kartoti kiekvieną dieną",
+                "onDays": "Kartoti {days}"
+            }
+        },
+        "placeholders": {
+            "habitName": "Įveskite įpročio pavadinimą"
+        }
+    },
+    "status": {
+        "expired": "Pasibaigęs",
+        "complete": "Baigtas",
+        "unfinished": "Nepabaigtas",
+        "disabled": "Išjungtas"
+    },
+    "modal": {
+        "createHabit": {
+            "title": "Įpročio kūrimas",
+            "description": "Užpildykite formą, kad sukurtumėte naują įprotį.",
+            "successNotification": {
+                "title": "Įprotis Sėkmingai Sukurtas",
+                "description": "Jūsų įprotis buvo sėkmingai sukurtas."
+            }
+        },
+        "editHabit": {
+            "title": "Įpročio redagavimas",
+            "description": "Keiskite savo įpročių detales, atnaujinkite tikslus.",
+            "successNotification": {
+                "title": "Įpročio atnaujinimas sėkmingas",
+                "description": "Jūsų įprotis buvo sėkmingai atnaujintas."
+            }
+        },
+        "confirmHabitStatusChange": {
+            "title": "Keisti įpročio būseną",
+            "text": "Ar tikrai norite pažymėti šį įprotį kaip baigtą?",
+            "success": {
+                "title": "Įpročio būsena atnaujinta",
+                "description": "Įpročio būsena sėkmingai atnaujinta į 'Baigtas'."
+            }
+        },
+        "unmarkHabitStatus": {
+            "title": "Keisti įpročio būseną",
+            "text": "Ar tikrai norite atžymėti šį įprotį?",
+            "success": {
+                "title": "Įpročio būsena atnaujinta",
+                "description": "Įpročio būsenos pakeista į 'Pradėtas'."
+            }
+        },
+        "deleteHabit": {
+            "title": "Ištrinti įprotį",
+            "text": "Ar tikrai norite ištrinti šį įprotį? Jo ištrynimas pašalins visus susijusius įpročius, kuriuos sukūrėte.",
+            "success": {
+                "title": "Įprotis ištrintas",
+                "description": "Įprotis sėkmingai ištrintas."
+            }
+        },
+        "enableHabit": {
+            "title": "Įjungti įprotį",
+            "text": "Ar tikrai norite įjungti šį įprotį? Kai jis bus įjungtas, jis vėl bus matomas jūsų aktyvių įpročių sąraše.",
+            "success": {
+                "title": "Įprotis sėkmingai įjungtas",
+                "description": "Jūsų įprotis buvo sėkmingai įjungtas ir dabar matomas jūsų aktyvių įpročių sąraše."
+            }
+        },
+        "disableHabit": {
+            "title": "Išjungti įprotį",
+            "text": "Ar tikrai norite išjungti šį įprotį? Kai jis bus išjungtas, jis nebebus matomas jūsų aktyvių įpročių sąraše.",
+            "success": {
+                "title": "Įprotis sėkmingai išjungtas",
+                "description": "Jūsų įprotis buvo sėkmingai išjungtas ir dabar nebematyti jūsų aktyvių įpročių sąraše."
+            }
+        },
+        "buttons": {
+            "cancel": "Atšaukti",
+            "create": "Sukurti",
+            "update": "Atnaujinti",
+            "close": "Uždaryti",
+            "confirm": "Patvirtinti",
+            "delete": "Ištrinti"
+        }
+    },
+    "notification": {
+        "error": {
+            "title": "Klaida",
+            "description": "Įvyko klaida. Prašome pabandyti dar kartą."
+        },
+        "rangeError": {
+            "title": "Neteisingas datos intervalas",
+            "description": "Pradžios data negali būti vėlesnė nei pabaigos data."
+        },
+        "invalidDateError": {
+            "title": "Neteisinga data",
+            "description": "Datos formatas neteisingas. Prašome naudoti formatą YYYY/MM/dd."
+        },
+        "invalidDateRangeError": {
+            "title": "Neteisinga data",
+            "description": "Data turi būti tarp galiojančių datų nuo {minDate} iki {maxDate}."
+        }
+    },
+    "calendar": {
+        "btn": {
+            "pick": "Pasirinkti",
+            "close": "Uždaryti"
+        },
+        "days": {
+            "mo": "Pr",
+            "tu": "An",
+            "we": "Tr",
+            "th": "Kt",
+            "fr": "Pn",
+            "sa": "Št",
+            "su": "Sk"
+        }
+    },
+    "progress": {
+        "myProgress": "Mano progresas",
+        "myProgressDescription": "Peržiūrėkite, kiek įpročio dalies įvykdėte.",
+        "loadMore": "Rodyti daugiau"
+    },
+    "habitList": {
+        "title": "Kasdieniai įpročiai",
+        "selected": {
+            "active": "Aktyvus",
+            "inactive": "Neaktyvus"
+        }
+    },
+    "habitFilter": {
+        "filter": "Filtruoti",
+        "reset": "Išvalyti",
+        "navigate": "Naršyti įpročius"
+    },
+    "imagesAlt": {
+        "emblemImg": "Įmonės logotipas su trikampiu",
+        "closeImg": "Piktograma su dviem įstrižaisiais linijomis, kertančiomis viena kitą ir sudarančiomis uždarymo simbolį",
+        "barImg": "Piktograma, vaizduojanti 'hamburgerio' meniu",
+        "arrowImg": "Piktograma su paprasta rodykle",
+        "homeImg": "Piktograma namo forma",
+        "helpImg": "Piktograma, vaizduojanti pagalbą, klaustuko ženklas",
+        "settingsImg": "Piktograma, vaizduojanti krumpliaratį su dantytomis briaunomis",
+        "calendarImg": "Piktograma, vaizduojanti kalendorių su mėnesio ir dienų langeliais",
+        "clockImg": "Piktograma, vaizduojanti laikrodį su apvaliu ciferblatu ir valandų bei minučių rodyklėmis",
+        "unlockImg": "Piktograma, vaizduojanti atrakintą spyną, su pakelta užraktu",
+        "lockImg": "Piktograma, vaizduojanti užrakintą spyną, su nuleistu užraktu",
+        "editImg": "Piktograma, vaizduojanti pieštuką",
+        "deleteImg": "Piktograma, vaizduojanti šiukšliadėžę",
+        "deselectedImg": "Piktograma, vaizduojanti tuščią žymėjimo langelį",
+        "selectedImg": "Piktograma, vaizduojanti pažymėtą žymėjimo langelį",
+        "emptyImg": "Piktograma, vaizduojanti tuščią dokumentą "
+    },
+    "help": {
+        "welcomeTitle": "Sveiki atvykę į Trako pagalbą",
+        "welcomeDescription": "Čia rasite instrukcijas apie funkcijas ir galimybes, kurios padės jums kuo geriau išnaudoti Trako."
+    },
+    "buttonsLabels": {
+        "notFound": "Eiti į pagrindinį puslapį",
+        "closeModal": "Uždaryti langą",
+        "loadMore": "Įkelti daugiau elementų",
+        "submitForm": "Pateikti formą",
+        "cancelAction": "Atšaukti veiksmą",
+        "confirmAction": "Patvirtinti veiksmą",
+        "toggleSidebar": "Perjungti šoninį meniu",
+        "unmarkHabit": "Panaikinti įpročio užbaigimą",
+        "markHabit": "Pažymėti įpročio užbaigimą",
+        "deleteHabit": "Ištrinti įprotį",
+        "editHabit": "Redaguoti įprotį",
+        "disableHabit": "Išjungti įprotį",
+        "enableHabit": "Įjungti įprotį",
+        "resetHabitFilter": "Atstatyti įpročio filtrą",
+        "filterHabits": "Taikyti įpročio filtrą",
+        "toggleHabitNavigationSidebar": "Perjungti įpročių navigacijos šoninį meniu",
+        "openCreateHabitModal": "Atidaryti įpročio kūrimo langą",
+        "viewHabitDetails": "Peržiūrėti įpročio detales"
+    },
+    "features": {
+        "userFriendly": {
+            "title": "Patogus Naudojimas",
+            "description": "Lengva naršyti ir naudotis."
+        },
+        "habitManagement": {
+            "title": "Įpročių Valdymas",
+            "description": "Sukurkite, redaguokite, ištrinkite, įjunkite ir išjunkite įpročius."
+        },
+        "flexibleNavigation": {
+            "title": "Lankstus Naršymas",
+            "description": "Naršykite įpročius pagal datą arba datų intervalą."
+        },
+        "repeatingHabits": {
+            "title": "Įpročių Kartojimas",
+            "description": "Pasirinkite specifines dienas įpročių kartojimui."
+        },
+        "habitStatusTracking": {
+            "title": "Įpročių Būsenos Sekimas",
+            "description": "Sekite savo įpročių būsenas (Nepabaigtas, Pabaigtas, Pasibaiges, Išjungtas)."
+        },
+        "progressOverview": {
+            "title": "Progreso Apžvalga",
+            "description": "Sekite, kiek įpročių esate įvykdę."
+        },
+        "calendarNavigation": {
+            "title": "Kalendoriaus Naršymas",
+            "description": "Peržiūrėkite įpročius kalendoriuje su raudonu tašku kaip rodiklių."
+        },
+        "multilingualSupport": {
+            "title": "Daugiafunkcinė Kalbų Parama",
+            "description": "Perjunkite tarp Lietuvių ir Anglų kalbų."
+        },
+        "themeCustomization": {
+            "title": "Temos Pritaikymas",
+            "description": "Perjunkite tarp tamsio ir šviesio režimo."
+        },
+        "dateRangeSelection": {
+            "title": "Datų Intervalo Pasirinkimas",
+            "description": "Nustatykite įpročio pradžios ir pabaigos datas, su numatytu {defaultYearsDuration} metų trukmė."
+        },
+        "routerNavigation": {
+            "title": "Maršruto Naršymas",
+            "description": "Naršykite tarp įpročių naudodami datų intervalą. Formatas: day/YYYY-MM-DD/YYYY-MM-DD arba day/YYYY-MM-DD."
+        }
+    }
+}

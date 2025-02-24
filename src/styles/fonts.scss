@@ -1,0 +1,37 @@
+@use "@/styles/mixins"as *;
+
+.font-montserrat-36-bold {
+    @include font-montserrat(2.25rem, 600);
+}
+
+.font-montserrat-28-bold {
+    @include font-montserrat(1.75rem, 600);
+}
+
+.font-montserrat-18-bold {
+    @include font-montserrat(1.125rem, 600);
+}
+
+.font-montserrat-16-bold {
+    @include font-montserrat(1rem, 600);
+}
+
+.font-montserrat-16-regular {
+    @include font-montserrat(1rem, 400);
+}
+
+.font-montserrat-14-bold {
+    @include font-montserrat(0.875rem, 600);
+}
+
+.font-montserrat-14-regular {
+    @include font-montserrat(0.875rem, 400);
+}
+
+.font-montserrat-12-bold {
+    @include font-montserrat(0.75rem, 600);
+}
+
+.font-montserrat-12-regular {
+    @include font-montserrat(0.75rem, 400);
+}

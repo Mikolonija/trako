@@ -1,0 +1,184 @@
+@use "@/styles/colors"as *;
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+#app,
+body {
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea,
+select {
+    border: none;
+    box-sizing: border-box;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+header-menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.checkbox {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--checkbox-border-color);
+    cursor: pointer;
+    line-height: 1.2;
+    background: transparent;
+    margin: 0;
+    border-radius: 2px;
+    position: relative;
+    transition: border .2s;
+}
+
+.checkbox:hover {
+    border: 1px solid var(--checkbox-focus-border-color);
+}
+
+input[type="checkbox"]::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    content: " ";
+}
+
+input[type="checkbox"]:checked::before {
+    content: "\2713";
+    color: var(--checkbox-color);
+    background-color: var(--checkbox-active-bg);
+    outline: solid 1px var(--checkbox-active-bg);
+    font-weight: 600;
+    border-radius: 1px;
+    font-size: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+}

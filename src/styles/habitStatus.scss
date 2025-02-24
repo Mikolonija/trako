@@ -1,0 +1,24 @@
+.status {
+    padding: $spacing-small;
+    border-radius: $radius-medium;
+}
+
+.habit-status-unfinished {
+    background-color: var(--habit-started-bg);
+    color: var(--habit-started-color);
+}
+
+.habit-status-disabled {
+    background-color: var(--habit-disabled-bg);
+    color: var(--habit-disabled-color);
+}
+
+.habit-status-complete {
+    background-color: var(--habit-complete-bg);
+    color: var(--habit-complete-color);
+}
+
+.habit-status-expired {
+    background-color: var(--habit-expired-bg);
+    color: var(--habit-expired-color);
+}

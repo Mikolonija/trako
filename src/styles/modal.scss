@@ -1,0 +1,152 @@
+@use "@/styles/variables"as *;
+@use "@/styles/mixins"as *;
+
+.modal-bg {
+    position: fixed;
+    z-index: $z-index-default;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--teleport-bg-outside);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.modal {
+    position: relative;
+    background-color: var(--modal-bg);
+    width: 500px;
+    border-radius: $radius-small;
+    padding: 0 $spacing-medium;
+
+    @include media-query(phone) {
+        overflow-y: auto;
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    &-header {
+        padding: $spacing-large $spacing-medium $spacing-large $spacing-medium;
+        margin: 0 -#{$spacing-medium};
+        gap: $spacing-small;
+        display: grid;
+        border-bottom: solid 1px var(--modal-line-color);
+
+        &-description {
+            line-height: 1.2;
+        }
+    }
+
+    &-main-with-scroll {
+        margin: 0 -#{$spacing-medium};
+        max-height: 300px;
+        overflow-y: auto;
+        padding: $spacing-large $spacing-medium;
+
+        @include media-query(phone) {
+            max-height: 100%;
+        }
+    }
+
+    &-main {
+        margin: 0 -#{$spacing-medium};
+        padding: $spacing-large $spacing-medium;
+        line-height: 1.3;
+    }
+
+    &-footer {
+        margin: 0 -#{$spacing-medium};
+        padding: $spacing-large $spacing-medium;
+        gap: $spacing-small;
+        border-top: solid 1px var(--modal-line-color);
+
+        @include media-query(phone) {
+            display: grid;
+            grid-template-rows: 1fr;
+            width: 100%;
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &-close-container {
+        position: absolute;
+        top: 12px;
+        right: 8px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &-close-icon {
+        fill: var(--color);
+    }
+
+    &-close-icon:hover {
+        opacity: 0.5;
+    }
+
+
+    &-error-container {
+        gap: 2px;
+        display: grid;
+        padding: $spacing-large 0 0 0;
+    }
+
+    &-error-message {
+        color: var(--error-color);
+    }
+}
+
+
+.modal-btn {
+
+    &-delete {
+        border-radius: $radius-small;
+        color: var(--modal-delete-btn-color);
+        background-color: var(--modal-delete-btn-bg);
+        min-width: 130px;
+        min-height: 40px;
+
+    }
+
+    &-delete:hover {
+        opacity: 0.8;
+    }
+
+    &-cancel {
+        border-radius: $radius-small;
+        color: var(--modal-cancel-btn-color);
+        background-color: var(--modal-cancel-btn-bg);
+        border: solid 1px var(--modal-cancel-btn-border);
+        min-width: 130px;
+        min-height: 40px;
+        transition: box-shadow 0.2s, color 0.2s;
+    }
+
+    &-cancel:hover {
+        box-shadow: var(--modal-btn-hover) 0px 1px 4px;
+    }
+
+    &-confirm {
+        position: relative;
+        min-width: 130px;
+        min-height: 40px;
+        border-radius: $radius-small;
+        background-color: var(--modal-confirm-btn-bg);
+        color: var(--modal-confirm-btn-color);
+    }
+
+    &-confirm:disabled {
+        background-color: var(--modal-confirm-btn-disabled-bg);
+    }
+
+    &-confirm:hover {
+        box-shadow: var(--modal-btn-hover) 0px 1px 4px;
+    }
+}

@@ -1,0 +1,208 @@
+[data-theme="DM"] {
+    --bg-color: #121212;
+    --color: #dddddd;
+
+    --btn-color: #121212;
+    --btn-shadow-hover-color: rgba(18, 18, 18, 0.6);
+    --btn-shadow-color: rgba(18, 18, 18, 0.16);
+
+    --btn-confirm-bg: #81c784;
+
+    --btn-cancel-bg: #dddddd;
+
+    --loader-border: #dddddd;
+    --loader-active: #81c784;
+
+    --btn-loaded-bg: #dddddd;
+    --btn-loaded-color: #121212;
+
+    --modal-bg: #121212;
+
+    --modal-textarea-bg: #282828;
+    --modal-textarea-color: #dddddd;
+
+    --checkbox-fucus-color: #121212;
+    --checkbox-color: #121212;
+    --checkbox-border-color: #dddddd;
+    --checkbox-focus-border-color: #aaaeb7;
+    --checkbox-active-bg: #81c784;
+
+    --textarea-border-color: #dddddd;
+    --textarea-focus-border-color: #aaaeb7;
+
+    --modal-line-color: #dddddd;
+
+    --modal-confirm-btn-bg: #81c784;
+    --modal-confirm-btn-color: #282828;
+    --modal-confirm-btn-disabled-bg: rgba(129, 199, 132, 0.5);
+
+    --modal-delete-btn-color: #ffffff;
+    --modal-delete-btn-bg: #8B0000;
+
+    --modal-cancel-btn-bg: #282828;
+    --modal-cancel-btn-color: #dddddd;
+    --modal-cancel-btn-border: #dddddd;
+
+    --modal-btn-hover: rgba(255, 255, 255, 0.8);
+
+    --header-bg: #282828;
+    --header-shadow-color: rgba(0, 0, 0, 0.25);
+    --header-icon: #dddddd;
+    --header-color: #dddddd;
+
+    --sideBar-bg: #282828;
+    --sideBar-color: #dddddd;
+    --sideBar-active: #81c784;
+    --sideBar-not-active: #9f9f9c;
+    --sideBar-line: rgba(255, 255, 255, 0.2);
+    --sidebar-shadow-color: rgba(18, 18, 18, 0.16);
+
+    --error-color: #FF0000;
+
+    --scrollbar-color: #81c784;
+
+    --bubble-color: rgba(255, 255, 255, 0.2);
+
+    --habit-creator-color: #121212;
+    --habit-creator-bg: linear-gradient(to right, #a5e972, #72d56b, #81c784);
+
+    --teleport-bg-outside: rgba(255, 255, 255, 0.6);
+
+    --line: rgba(255, 255, 255, 0.2);
+
+    --notification-color: #ffffff;
+
+    --notification-success-bg: #004000;
+    --notification-success-border: #81c784;
+
+    --notification-error-bg: #8B0000;
+    --notification-error-border: #FF0000;
+
+    --card-bg: #282828;
+    --card-shadow-color: rgba(18, 18, 18, 0.16);
+
+    --habit-card-info-bg: #282828;
+    --habit-card-info-color: #dddddd;
+
+    --habit-disabled-bg: #8B0000;
+    --habit-disabled-color: #ffffff;
+
+    --habit-started-bg: #FBC02D;
+    --habit-started-color: #121212;
+
+    --habit-complete-bg: #81c784;
+    --habit-complete-color: #1B5E20;
+
+    --habit-expired-bg: #dddddd;
+    --habit-expired-color: #121212;
+
+    --repeat-day-color: #121212;
+    --repeat-day-bg: #81c784;
+    --repeat-day-default-bg: #282828;
+    --repeat-day-border: #dddddd;
+}
+
+[data-theme="LM"] {
+    --bg-color: #ffffff;
+    --color: #121212;
+
+    --btn-color: #121212;
+    --btn-shadow-hover-color: rgba(18, 18, 18, 0.6);
+    --btn-shadow-color: rgba(18, 18, 18, 0.16);
+
+    --btn-confirm-bg: #81c784;
+
+    --btn-cancel-bg: #ffffff;
+
+    --loader-border: #dddddd;
+    --loader-active: #81c784;
+
+    --btn-loaded-bg: #ffffff;
+    --btn-loaded-color: #121212;
+
+    --modal-bg: #ffffff;
+
+    --modal-textarea-bg: #ffffff;
+    --modal-textarea-color: #121212;
+
+    --checkbox-fucus-color: #121212;
+    --checkbox-color: #121212;
+    --checkbox-border-color: #dddddd;
+    --checkbox-focus-border-color: #aaaeb7;
+    --checkbox-active-bg: #81c784;
+
+    --textarea-border-color: #dddddd;
+    --textarea-focus-border-color: #aaaeb7;
+
+    --modal-line-color: #dddddd;
+
+    --modal-confirm-btn-bg: #81c784;
+    --modal-confirm-btn-color: #282828;
+    --modal-confirm-btn-disabled-bg: rgba(129, 199, 132, 0.5);
+
+    --modal-delete-btn-color: #ffffff;
+    --modal-delete-btn-bg: #8B0000;
+
+    --modal-cancel-btn-bg: #ffffff;
+    --modal-cancel-btn-color: #121212;
+    --modal-cancel-btn-border: #dddddd;
+
+    --modal-btn-hover: rgba(18, 18, 18, 0.16);
+
+    --header-bg: #181818;
+    --header-shadow-color: rgba(18, 18, 18, 0.25);
+    --header-icon: #ffffff;
+    --header-color: #ffffff;
+
+    --sideBar-bg: #181818;
+    --sideBar-color: #ffffff;
+    --sideBar-active: #81c784;
+    --sideBar-not-active: #9f9f9c;
+    --sideBar-line: rgba(255, 255, 255, 0.2);
+    --sidebar-shadow-color: rgba(18, 18, 18, 0.16);
+
+    --error-color: #FF0000;
+
+    --scrollbar-color: #81c784;
+
+    --bubble-color: rgba(18, 18, 18, 0.2);
+
+    --habit-creator-bg: linear-gradient(to right, #a5e972, #72d56b, #81c784);
+    --habit-creator-color: #121212;
+
+    --teleport-bg-outside: rgba(15, 15, 15, 0.5);
+
+    --line: rgba(18, 18, 18, 0.2);
+
+    --card-bg: #ffffff;
+    --card-shadow-color: rgba(18, 18, 18, 0.16);
+
+    --notification-color: #ffffff;
+
+    --notification-success-bg: #004000;
+    --notification-success-border: #81c784;
+
+    --notification-error-bg: #8B0000;
+    --notification-error-border: #FF0000;
+
+    --habit-card-info-bg: #121212;
+    --habit-card-info-color: #ffffff;
+
+    --habit-disabled-bg: #8B0000;
+    --habit-disabled-color: #ffffff;
+
+    --habit-started-bg: #FBC02D;
+    --habit-started-color: #121212;
+
+    --habit-complete-bg: #81c784;
+    --habit-complete-color: #1B5E20;
+
+    --habit-expired-bg: #dddddd;
+    --habit-expired-color: #121212;
+
+    --repeat-day-color: #121212;
+    --repeat-day-bg: #81c784;
+    --repeat-day-default-bg: #ffffff;
+    --repeat-day-border: #dddddd;
+
+}
