@@ -1,80 +1,88 @@
-@use "@/styles/variables"as *;
+@use '@/styles/variables' as *;
 
 .confirm-btn {
-    border-radius: $radius-small;
-    min-height: 40px;
-    border: none;
-    padding: 0 $spacing-medium;
-    color: var(--btn-color);
-    background-color: var(--btn-confirm-bg);
-    box-shadow: var(--btn-shadow-color) 0px 1px 4px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: $radius-small;
+  min-height: 40px;
+  border: none;
+  padding: 0 $spacing-medium;
+  color: var(--btn-color);
+  background-color: var(--btn-confirm-bg);
+  box-shadow: var(--btn-shadow-color) 0px 1px 4px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .confirm-btn:disabled {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .confirm-btn:hover {
-    box-shadow: var(--btn-shadow-hover-color) 0px 1px 4px;
-    transform: translateY(-2px);
+  box-shadow: var(--btn-shadow-hover-color) 0px 1px 4px;
+  transform: translateY(-2px);
 }
 
 .cancel-btn {
-    border-radius: $radius-small;
-    min-height: 40px;
-    min-width: 130px;
-    border: none;
-    padding: 0 $spacing-medium;
-    color: var(--btn-color);
-    background-color: var(--btn-cancel-bg);
-    box-shadow: var(--btn-shadow-color) 0px 1px 4px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: $radius-small;
+  min-height: 40px;
+  min-width: 130px;
+  border: none;
+  padding: 0 $spacing-medium;
+  color: var(--btn-color);
+  background-color: var(--btn-cancel-bg);
+  box-shadow: var(--btn-shadow-color) 0px 1px 4px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .cancel-btn:hover {
-    box-shadow: var(--btn-shadow-hover-color) 0px 1px 4px;
-    transform: translateY(-2px);
+  box-shadow: var(--btn-shadow-hover-color) 0px 1px 4px;
+  transform: translateY(-2px);
 }
 
 .cancel-btn:disabled {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .loaded-more-btn {
-    border-radius: $radius-small;
-    min-height: 40px;
-    min-width: 100%;
-    border: none;
-    padding: 0 $spacing-medium;
-    color: var(--btn-loaded-color);
-    background-color: var(--btn-loaded-bg);
-    box-shadow: var(--btn-shadow-color) 0px 1px 4px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: $radius-small;
+  min-height: 40px;
+  min-width: 100%;
+  border: none;
+  padding: 0 $spacing-medium;
+  color: var(--btn-loaded-color);
+  background-color: var(--btn-loaded-bg);
+  box-shadow: var(--btn-shadow-color) 0px 1px 4px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .loaded-more-btn:disabled {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .loaded-more-btn:hover {
-    box-shadow: var(--btn-shadow-hover-color) 0px 1px 4px;
-    transform: translateY(-2px);
+  box-shadow: var(--btn-shadow-hover-color) 0px 1px 4px;
+  transform: translateY(-2px);
 }
 
 .cancel-btn-round {
-    width: 40px;
-    height: 40px;
-    border-radius: 25px;
-    min-height: 40px;
-    background-color: var(--btn-cancel-bg);
-    border: none;
-    color: var(--btn-color);
-    box-shadow: var(--btn-shadow-color) 0px 1px 4px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  min-height: 40px;
+  background-color: var(--btn-cancel-bg);
+  border: none;
+  color: var(--btn-color);
+  box-shadow: var(--btn-shadow-color) 0px 1px 4px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .cancel-btn-round:hover {
-    box-shadow: var(--btn-shadow-hover-color) 0px 1px 4px;
-    transform: translateY(-2px);
+  box-shadow: var(--btn-shadow-hover-color) 0px 1px 4px;
+  transform: translateY(-2px);
 }

@@ -1,8 +1,8 @@
-import { defineStore } from "pinia";
-import type { Habit, Time } from "@/types/interfaces/habit";
-import { HabitActivationStatus, HabitStatus } from "@/types/enums/habit";
-import { getCurrentTime } from "@/utils/helpers";
-import { useLocalStorage } from "@vueuse/core";
+import { defineStore } from 'pinia';
+import type { Habit, Time } from '@/types/interfaces/habit';
+import { HabitActivationStatus, HabitStatus } from '@/types/enums/habit';
+import { getCurrentTime } from '@/utils/helpers';
+import { useLocalStorage } from '@vueuse/core';
 import {
   defaultHabitRange,
   defaultLoadedMore,
@@ -10,9 +10,9 @@ import {
   repeatDaysDefault,
   defaultYearsDuration,
   defaultHabitSelected,
-} from "@/config";
-import { addDays } from "date-fns/addDays";
-import { uuid } from "vue-uuid";
+} from '@/config';
+import { addDays } from 'date-fns/addDays';
+import { uuid } from 'vue-uuid';
 
 const newHabit = (): Habit => {
   const { hours: startTimeHours, minutes } = getCurrentTime();
@@ -22,9 +22,9 @@ const newHabit = (): Habit => {
   };
   const startDate = new Date();
   return {
-    id: "",
-    itemId: "",
-    name: "",
+    id: '',
+    itemId: '',
+    name: '',
     repeatDays: repeatDaysDefault,
     isActive: HabitActivationStatus.Enable,
     deadline: new Date(),
@@ -36,7 +36,7 @@ const newHabit = (): Habit => {
   };
 };
 
-const useHabitStore = defineStore("habit", {
+const useHabitStore = defineStore('habit', {
   state: () => ({
     habits: useLocalStorage<Habit[]>(localStorageHabits, []),
     habit: newHabit(),
@@ -85,10 +85,7 @@ const useHabitStore = defineStore("habit", {
       };
     },
 
-    changeHabitActivationStatus(
-      currentHabit: Habit,
-      status: HabitActivationStatus
-    ): void {
+    changeHabitActivationStatus(currentHabit: Habit, status: HabitActivationStatus): void {
       this.habits = this.habits.map((habit) => {
         if (habit.id === currentHabit.id) {
           return { ...habit, isActive: status };
@@ -104,7 +101,7 @@ const useHabitStore = defineStore("habit", {
         habitMap.set(habit.itemId, habit);
       });
       const existingDates = new Set(
-        existingDeadlines.map((habit) => new Date(habit.deadline).setHours(0, 0, 0, 0))
+        existingDeadlines.map((habit) => new Date(habit.deadline).setHours(0, 0, 0, 0)),
       );
       this.updateExistingHabits(habitMap, updatedHabit);
       this.createMissingHabits(existingDates, updatedHabit);
@@ -117,7 +114,7 @@ const useHabitStore = defineStore("habit", {
       for (const [_, habit] of habitMap) {
         const habitDate = new Date(habit.deadline).setHours(0, 0, 0, 0);
         const isRepeatDay = updatedHabit.repeatDays.some(
-          (day) => day.day === new Date(habit.deadline).getDay()
+          (day) => day.day === new Date(habit.deadline).getDay(),
         );
         if (habitDate >= startDate && habitDate <= endDate && isRepeatDay) {
           updatedHabits.push(this.updateHabitData(habit, updatedHabit));
@@ -177,9 +174,7 @@ const useHabitStore = defineStore("habit", {
     },
 
     changeHabitStatus(currentHabit: Habit, status: HabitStatus): void {
-      const index = this.habits.findIndex(
-        (habit) => habit.itemId === currentHabit.itemId
-      );
+      const index = this.habits.findIndex((habit) => habit.itemId === currentHabit.itemId);
       if (index !== -1) {
         this.habits[index].status = status;
       }
@@ -203,8 +198,8 @@ const useHabitStore = defineStore("habit", {
         .filter((x) => x.isActive === state.habitSelected)
         .map((x: Habit) => ({
           date: addDays(new Date(x.deadline), 0),
-          type: "dot",
-          color: "#8B0000",
+          type: 'dot',
+          color: '#8B0000',
         }));
     },
 
@@ -218,10 +213,10 @@ const useHabitStore = defineStore("habit", {
           const d = new Date(date);
           return `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(
             2,
-            "0"
-          )}/${String(d.getDate()).padStart(2, "0")}`;
+            '0',
+          )}/${String(d.getDate()).padStart(2, '0')}`;
         })
-        .join(" - ");
+        .join(' - ');
     },
   },
 });

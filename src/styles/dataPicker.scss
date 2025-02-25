@@ -1,61 +1,56 @@
-@use "@/styles/colors"as *;
-@use "@/styles/mixins"as *;
-
+@use '@/styles/colors' as *;
+@use '@/styles/mixins' as *;
 
 :root {
-    --dp-font-family: "Montserrat", sans-serif;
-    --dp-border-radius: 5px;
-    --dp-cell-border-radius: 5px;
-    --dp-common-transition: all 0.1s ease-in;
-    --dp-font-size: 0.875rem;
+  --dp-font-family: 'Montserrat', sans-serif;
+  --dp-border-radius: 5px;
+  --dp-cell-border-radius: 5px;
+  --dp-common-transition: all 0.1s ease-in;
+  --dp-font-size: 0.875rem;
 }
 
 .dp__theme_light {
-    --dp-primary-disabled-color: rgba(129, 199, 132, 0.5);
-    --dp-background-color: #ffffff;
-    --dp-primary-text-color: #121212;
-    --dp-text-color: #121212;
-    --dp-primary-color: #dddddd;
-    --dp-secondary-color: rgba(0, 0, 0, 0.3);
-
+  --dp-primary-disabled-color: rgba(129, 199, 132, 0.5);
+  --dp-background-color: #ffffff;
+  --dp-primary-text-color: #121212;
+  --dp-text-color: #121212;
+  --dp-primary-color: #dddddd;
+  --dp-secondary-color: rgba(0, 0, 0, 0.3);
 }
 
 .dp__theme_dark {
-    --dp-primary-disabled-color: rgba(129, 199, 132, 0.5);
-    --dp-background-color: #282828;
-    --dp-primary-text-color: #121212;
-    --dp-border-color: #ffffff;
-    --dp-text-color: #ffffff;
-    --dp-primary-color: #dddddd;
-    --dp-secondary-color: #666666;
+  --dp-primary-disabled-color: rgba(129, 199, 132, 0.5);
+  --dp-background-color: #282828;
+  --dp-primary-text-color: #121212;
+  --dp-border-color: #ffffff;
+  --dp-text-color: #ffffff;
+  --dp-primary-color: #dddddd;
+  --dp-secondary-color: #666666;
 }
 
-
 .dp__action_cancel:hover {
-    border-color: #fff;
-    box-shadow: var(--modal-btn-hover) 0px 1px 4px;
-
+  border-color: #fff;
+  box-shadow: var(--modal-btn-hover) 0px 1px 4px;
 }
 
 .dp__action_select:hover {
-    box-shadow: var(--modal-btn-hover) 0px 1px 4px;
+  box-shadow: var(--modal-btn-hover) 0px 1px 4px;
 }
 
 .days-calendar {
-    .dp__menu {
-        width: 280px;
-    }
+  .dp__menu {
+    width: 280px;
+  }
 }
 
 .dp__flex_display {
-    display: block;
+  display: block;
 }
 
 @include media-query(tablet) {
-    .days-calendar {
-        .dp__menu {
-            width: 100%;
-        }
-
+  .days-calendar {
+    .dp__menu {
+      width: 100%;
     }
+  }
 }

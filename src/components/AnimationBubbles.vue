@@ -5,9 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue';
 
-const bubbles = ref<String[]>(["", "", "", "", "", "", "", "", ""]);
+const bubbles = ref<String[]>(['', '', '', '', '', '', '', '', '']);
 </script>
 
 <style scoped lang="scss">

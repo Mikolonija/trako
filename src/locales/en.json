@@ -1,261 +1,261 @@
 {
-    "menu": {
-        "home": "Home",
-        "help": "Help",
-        "settings": {
-            "main": "Settings",
-            "theme": "Theme",
-            "darkMode": "Dark mode (DM)",
-            "lightMode": "Light mode (LM)",
-            "language": "Language",
-            "languages": {
-                "en": "English (EN)",
-                "lt": "Lithuania (LT)"
-            }
-        }
-    },
-    "notFound": {
-        "title": "Page Not Found",
-        "message": "Sorry, the page doesn’t exist. It may have been moved, deleted, or the URL is incorrect. Please check the address and try again or return to the homepage.",
-        "btnText": "Back to Home"
-    },
-    "infoCard": {
-        "title": "How Are You Feeling Today?",
-        "description": "Create a habit to focus on today and easily track your progress.",
-        "btnText": "Create Habit"
-    },
-    "habitForm": {
-        "errors": {
-            "startTimeBeforeEndTime": "The start time must be set before the end time.",
-            "startDateCurrentError": "The start date cannot be less than current date.",
-            "endDateCurrentError": "The end date cannot be less than current date.",
-            "habitNameEmpty": "The habit name cannot be empty.",
-            "invalidStartTime": "Please select a valid start time.",
-            "habitNameLength": "Habit name cannot exceed 255 characters."
-        },
-        "labels": {
-            "habitName": "Habit name",
-            "startDate": "Start Date",
-            "endDate": "End Date",
-            "startTime": "Start Time",
-            "endTime": "End Time",
-            "repeat": {
-                "every": "Repeat every day",
-                "onDays": "Repeat on {days}"
-            }
-        },
-        "placeholders": {
-            "habitName": "Enter habit name"
-        }
-    },
-    "status": {
-        "expired": "Expired",
-        "complete": "Complete",
-        "unfinished": "Unfinished",
-        "disabled": "Disabled"
-    },
-    "modal": {
-        "createHabit": {
-            "title": "Habit Creation",
-            "description": "Fill out the form to create a new habit.",
-            "successNotification": {
-                "title": "Habit Created Successfully",
-                "description": "Your habit has been successfully created."
-            }
-        },
-        "editHabit": {
-            "title": "Edit Habit",
-            "description": "Change your habit details, update goals.",
-            "successNotification": {
-                "title": "Habit Update Successfully",
-                "description": "Your habit has been successfully updated."
-            }
-        },
-        "confirmHabitStatusChange": {
-            "title": "Change Habit Status",
-            "text": "Are you sure you want to mark this habit as complete?",
-            "success": {
-                "title": "Habit Status Updated",
-                "description": "The habit status has been successfully updated to 'Done'."
-            }
-        },
-        "unmarkHabitStatus": {
-            "title": "Change Habit Status",
-            "text": "Are you sure you want to unmark this habit?",
-            "success": {
-                "title": "Habit Status Updated",
-                "description": "The habit status has been updated to 'Started'."
-            }
-        },
-        "deleteHabit": {
-            "title": "Delete Habit",
-            "text": "Are you sure you want to delete this habit? Deleting it remove all associated habits you have created.",
-            "success": {
-                "title": "Habit Deleted",
-                "description": "The habit has been successfully deleted."
-            }
-        },
-        "enableHabit": {
-            "title": "Enable Habit",
-            "text": "Are you sure you want to enable this habit? Once enabled, it will be visible again in your active habits.",
-            "success": {
-                "title": "Habit Enabled Successfully",
-                "description": "Your habit has been successfully enabled and is now visible in your active habits."
-            }
-        },
-        "disableHabit": {
-            "title": "Disable Habit",
-            "text": "Are you sure you want to disable this habit? Once disabled, it will no longer be visible in your active habits list.",
-            "success": {
-                "title": "Habit Disabled Successfully",
-                "description": "Your habit has been successfully disabled and is no longer visible in your active habits list."
-            }
-        },
-        "buttons": {
-            "cancel": "Cancel",
-            "create": "Create",
-            "update": "Update",
-            "close": "Close",
-            "confirm": "Confirm",
-            "delete": "Delete"
-        }
-    },
-    "notification": {
-        "error": {
-            "title": "Error",
-            "description": "Something went wrong. Please try again."
-        },
-        "rangeError": {
-            "title": "Invalid Date Range",
-            "description": "The start date cannot be later than end date."
-        },
-        "invalidDateError": {
-            "title": "Invalid Date",
-            "description": "The date format is invalid. Please use the format YYYY/MM/dd."
-        },
-        "invalidDateRangeError": {
-            "title": "Invalid Date",
-            "description": "The date must be within the valid range between {minDate} and {maxDate}."
-        }
-    },
-    "calendar": {
-        "btn": {
-            "pick": "Pick",
-            "close": "Close"
-        },
-        "days": {
-            "mo": "Mo",
-            "tu": "Tu",
-            "we": "We",
-            "th": "Th",
-            "fr": "Fr",
-            "sa": "Sa",
-            "su": "Su"
-        }
-    },
-    "progress": {
-        "myProgress": "My Progress",
-        "myProgressDescription": "See how much of this habit you have completed.",
-        "loadMore": "Load More"
-    },
-    "habitList": {
-        "title": "Daily habits",
-        "selected": {
-            "active": "Active",
-            "inactive": "Inactive"
-        }
-    },
-    "habitFilter": {
-        "filter": "Filter",
-        "reset": "Reset",
-        "navigate": "Navigate Habits"
-    },
-    "buttonsLabels": {
-        "notFound": "Go to home page",
-        "closeModal": "Close the modal",
-        "loadMore": "Load more items",
-        "submitForm": "Submit form",
-        "cancelAction": "Cancel action",
-        "confirmAction": "Confirm action",
-        "toggleSidebar": "Toggle sidebar",
-        "unmarkHabit": "Unmark habit as complete",
-        "markHabit": "Mark habit as complete",
-        "deleteHabit": "Delete habit",
-        "editHabit": "Edit habit",
-        "disableHabit": "Disable habit",
-        "enableHabit": "Enable habit",
-        "resetHabitFilter": "Reset habit filter",
-        "filterHabits": "Apply habit filter",
-        "toggleHabitNavigationSidebar": "Toggle habit navigation sidebar",
-        "openCreateHabitModal": "Open create habit modal",
-        "viewHabitDetails": "View habit details"
-    },
-    "imagesAlt": {
-        "emblemImg": "Company logo featuring a triangle",
-        "closeImg": "Icon with two diagonal lines crossing each other, forming a close symbol",
-        "barImg": "Icon representing a hamburger menu",
-        "arrowImg": "Icon with a simple arrow shape",
-        "homeImg": "Icon in the shape of a house",
-        "helpImg": "Icon representing help, question mark",
-        "settingsImg": "Icon depicting a gear with toothed edges",
-        "calendarImg": "Icon depicting a calendar with boxes for the month and days",
-        "clockImg": "Icon depicting a clock with a circular face and hour and minute hands",
-        "unlockImg": "Icon depicting an unlocked padlock, with the shackle raised",
-        "lockImg": "Icon depicting a locked padlock, with the shackle down",
-        "editImg": "Icon depicting a pencil",
-        "deleteImg": "Icon depicting a trash bin",
-        "deselectedImg": "Icon depicting an empty checkbox",
-        "selectedImg": "Icon depicting a checked checkbox",
-        "emptyImg": "Icon depicting an empty document"
-    },
-    "help": {
-        "welcomeTitle": "Welcome to Trako Help",
-        "welcomeDescription": "Here, you'll find instructions on features and functionalities to help you get the most out of Trako."
-    },
-    "features": {
-        "userFriendly": {
-            "title": "User Friendly",
-            "description": "Easy to navigate and use."
-        },
-        "habitManagement": {
-            "title": "Habit Management",
-            "description": "Create, edit, delete, enable, and disable habits."
-        },
-        "flexibleNavigation": {
-            "title": "Flexible Navigation",
-            "description": "Navigate habits by date or date range."
-        },
-        "repeatingHabits": {
-            "title": "Repeating Habits",
-            "description": "Choose specific days for habit repetition."
-        },
-        "habitStatusTracking": {
-            "title": "Habit Status Tracking",
-            "description": "Monitor the status of your habits (Unfinished, Completed, Expired, Disabled)."
-        },
-        "progressOverview": {
-            "title": "Progress Overview",
-            "description": "Track how many habits you've completed."
-        },
-        "calendarNavigation": {
-            "title": "Calendar Navigation",
-            "description": "View habits on the calendar with a red dot indicator."
-        },
-        "multilingualSupport": {
-            "title": "Multilingual Support",
-            "description": "Switch between Lithuanian and English."
-        },
-        "themeCustomization": {
-            "title": "Theme Customization",
-            "description": "Switch between dark and light modes."
-        },
-        "dateRangeSelection": {
-            "title": "Date Range Selection",
-            "description": "Set habit start and end dates, with a default of {defaultYearsDuration} years."
-        },
-        "routerNavigation": {
-            "title": "Router Navigation",
-            "description": "Navigate between habits using a date range. Format: day/YYYY-MM-DD/YYYY-MM-DD or day/YYYY-MM-DD."
-        }
+  "menu": {
+    "home": "Home",
+    "help": "Help",
+    "settings": {
+      "main": "Settings",
+      "theme": "Theme",
+      "darkMode": "Dark mode (DM)",
+      "lightMode": "Light mode (LM)",
+      "language": "Language",
+      "languages": {
+        "en": "English (EN)",
+        "lt": "Lithuania (LT)"
+      }
     }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "Sorry, the page doesn’t exist. It may have been moved, deleted, or the URL is incorrect. Please check the address and try again or return to the homepage.",
+    "btnText": "Back to Home"
+  },
+  "infoCard": {
+    "title": "How Are You Feeling Today?",
+    "description": "Create a habit to focus on today and easily track your progress.",
+    "btnText": "Create Habit"
+  },
+  "habitForm": {
+    "errors": {
+      "startTimeBeforeEndTime": "The start time must be set before the end time.",
+      "startDateCurrentError": "The start date cannot be less than current date.",
+      "endDateCurrentError": "The end date cannot be less than current date.",
+      "habitNameEmpty": "The habit name cannot be empty.",
+      "invalidStartTime": "Please select a valid start time.",
+      "habitNameLength": "Habit name cannot exceed 255 characters."
+    },
+    "labels": {
+      "habitName": "Habit name",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "repeat": {
+        "every": "Repeat every day",
+        "onDays": "Repeat on {days}"
+      }
+    },
+    "placeholders": {
+      "habitName": "Enter habit name"
+    }
+  },
+  "status": {
+    "expired": "Expired",
+    "complete": "Complete",
+    "unfinished": "Unfinished",
+    "disabled": "Disabled"
+  },
+  "modal": {
+    "createHabit": {
+      "title": "Habit Creation",
+      "description": "Fill out the form to create a new habit.",
+      "successNotification": {
+        "title": "Habit Created Successfully",
+        "description": "Your habit has been successfully created."
+      }
+    },
+    "editHabit": {
+      "title": "Edit Habit",
+      "description": "Change your habit details, update goals.",
+      "successNotification": {
+        "title": "Habit Update Successfully",
+        "description": "Your habit has been successfully updated."
+      }
+    },
+    "confirmHabitStatusChange": {
+      "title": "Change Habit Status",
+      "text": "Are you sure you want to mark this habit as complete?",
+      "success": {
+        "title": "Habit Status Updated",
+        "description": "The habit status has been successfully updated to 'Done'."
+      }
+    },
+    "unmarkHabitStatus": {
+      "title": "Change Habit Status",
+      "text": "Are you sure you want to unmark this habit?",
+      "success": {
+        "title": "Habit Status Updated",
+        "description": "The habit status has been updated to 'Started'."
+      }
+    },
+    "deleteHabit": {
+      "title": "Delete Habit",
+      "text": "Are you sure you want to delete this habit? Deleting it remove all associated habits you have created.",
+      "success": {
+        "title": "Habit Deleted",
+        "description": "The habit has been successfully deleted."
+      }
+    },
+    "enableHabit": {
+      "title": "Enable Habit",
+      "text": "Are you sure you want to enable this habit? Once enabled, it will be visible again in your active habits.",
+      "success": {
+        "title": "Habit Enabled Successfully",
+        "description": "Your habit has been successfully enabled and is now visible in your active habits."
+      }
+    },
+    "disableHabit": {
+      "title": "Disable Habit",
+      "text": "Are you sure you want to disable this habit? Once disabled, it will no longer be visible in your active habits list.",
+      "success": {
+        "title": "Habit Disabled Successfully",
+        "description": "Your habit has been successfully disabled and is no longer visible in your active habits list."
+      }
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "create": "Create",
+      "update": "Update",
+      "close": "Close",
+      "confirm": "Confirm",
+      "delete": "Delete"
+    }
+  },
+  "notification": {
+    "error": {
+      "title": "Error",
+      "description": "Something went wrong. Please try again."
+    },
+    "rangeError": {
+      "title": "Invalid Date Range",
+      "description": "The start date cannot be later than end date."
+    },
+    "invalidDateError": {
+      "title": "Invalid Date",
+      "description": "The date format is invalid. Please use the format YYYY/MM/dd."
+    },
+    "invalidDateRangeError": {
+      "title": "Invalid Date",
+      "description": "The date must be within the valid range between {minDate} and {maxDate}."
+    }
+  },
+  "calendar": {
+    "btn": {
+      "pick": "Pick",
+      "close": "Close"
+    },
+    "days": {
+      "mo": "Mo",
+      "tu": "Tu",
+      "we": "We",
+      "th": "Th",
+      "fr": "Fr",
+      "sa": "Sa",
+      "su": "Su"
+    }
+  },
+  "progress": {
+    "myProgress": "My Progress",
+    "myProgressDescription": "See how much of this habit you have completed.",
+    "loadMore": "Load More"
+  },
+  "habitList": {
+    "title": "Daily habits",
+    "selected": {
+      "active": "Active",
+      "inactive": "Inactive"
+    }
+  },
+  "habitFilter": {
+    "filter": "Filter",
+    "reset": "Reset",
+    "navigate": "Navigate Habits"
+  },
+  "buttonsLabels": {
+    "notFound": "Go to home page",
+    "closeModal": "Close the modal",
+    "loadMore": "Load more items",
+    "submitForm": "Submit form",
+    "cancelAction": "Cancel action",
+    "confirmAction": "Confirm action",
+    "toggleSidebar": "Toggle sidebar",
+    "unmarkHabit": "Unmark habit as complete",
+    "markHabit": "Mark habit as complete",
+    "deleteHabit": "Delete habit",
+    "editHabit": "Edit habit",
+    "disableHabit": "Disable habit",
+    "enableHabit": "Enable habit",
+    "resetHabitFilter": "Reset habit filter",
+    "filterHabits": "Apply habit filter",
+    "toggleHabitNavigationSidebar": "Toggle habit navigation sidebar",
+    "openCreateHabitModal": "Open create habit modal",
+    "viewHabitDetails": "View habit details"
+  },
+  "imagesAlt": {
+    "emblemImg": "Company logo featuring a triangle",
+    "closeImg": "Icon with two diagonal lines crossing each other, forming a close symbol",
+    "barImg": "Icon representing a hamburger menu",
+    "arrowImg": "Icon with a simple arrow shape",
+    "homeImg": "Icon in the shape of a house",
+    "helpImg": "Icon representing help, question mark",
+    "settingsImg": "Icon depicting a gear with toothed edges",
+    "calendarImg": "Icon depicting a calendar with boxes for the month and days",
+    "clockImg": "Icon depicting a clock with a circular face and hour and minute hands",
+    "unlockImg": "Icon depicting an unlocked padlock, with the shackle raised",
+    "lockImg": "Icon depicting a locked padlock, with the shackle down",
+    "editImg": "Icon depicting a pencil",
+    "deleteImg": "Icon depicting a trash bin",
+    "deselectedImg": "Icon depicting an empty checkbox",
+    "selectedImg": "Icon depicting a checked checkbox",
+    "emptyImg": "Icon depicting an empty document"
+  },
+  "help": {
+    "welcomeTitle": "Welcome to Trako Help",
+    "welcomeDescription": "Here, you'll find instructions on features and functionalities to help you get the most out of Trako."
+  },
+  "features": {
+    "userFriendly": {
+      "title": "User Friendly",
+      "description": "Easy to navigate and use."
+    },
+    "habitManagement": {
+      "title": "Habit Management",
+      "description": "Create, edit, delete, enable, and disable habits."
+    },
+    "flexibleNavigation": {
+      "title": "Flexible Navigation",
+      "description": "Navigate habits by date or date range."
+    },
+    "repeatingHabits": {
+      "title": "Repeating Habits",
+      "description": "Choose specific days for habit repetition."
+    },
+    "habitStatusTracking": {
+      "title": "Habit Status Tracking",
+      "description": "Monitor the status of your habits (Unfinished, Completed, Expired, Disabled)."
+    },
+    "progressOverview": {
+      "title": "Progress Overview",
+      "description": "Track how many habits you've completed."
+    },
+    "calendarNavigation": {
+      "title": "Calendar Navigation",
+      "description": "View habits on the calendar with a red dot indicator."
+    },
+    "multilingualSupport": {
+      "title": "Multilingual Support",
+      "description": "Switch between Lithuanian and English."
+    },
+    "themeCustomization": {
+      "title": "Theme Customization",
+      "description": "Switch between dark and light modes."
+    },
+    "dateRangeSelection": {
+      "title": "Date Range Selection",
+      "description": "Set habit start and end dates, with a default of {defaultYearsDuration} years."
+    },
+    "routerNavigation": {
+      "title": "Router Navigation",
+      "description": "Navigate between habits using a date range. Format: day/YYYY-MM-DD/YYYY-MM-DD or day/YYYY-MM-DD."
+    }
+  }
 }

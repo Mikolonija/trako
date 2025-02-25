@@ -1,4 +1,4 @@
 export enum ThemeType {
-  DM = "DM",
-  LM = "LM",
+  DM = 'DM',
+  LM = 'LM',
 }

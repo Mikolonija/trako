@@ -1,21 +1,21 @@
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import path from "path";
-import svgLoader from "vite-svg-loader";
-import { compression } from "vite-plugin-compression2";
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
+import svgLoader from 'vite-svg-loader';
+import { compression } from 'vite-plugin-compression2';
 
 export default defineConfig({
   plugins: [
     vue(),
     svgLoader(),
     compression({
-      algorithm: "gzip",
+      algorithm: 'gzip',
       deleteOriginalAssets: false,
     }),
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   css: {

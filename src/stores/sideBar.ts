@@ -1,11 +1,11 @@
-import { setBodyOverflow } from "@/utils/helpers";
-import { defineStore } from "pinia";
-import { responsiveSize } from "@/config";
+import { setBodyOverflow } from '@/utils/helpers';
+import { defineStore } from 'pinia';
+import { responsiveSize } from '@/config';
 
 const isMobile = () => window.innerWidth <= responsiveSize.breakPointPhone;
 const isTablet = () => window.innerWidth <= responsiveSize.breakPointTablet;
 
-const useSideBarStore = defineStore("sideBar", {
+const useSideBarStore = defineStore('sideBar', {
   state: () => ({
     isMenuSideBarCollapsed: false as boolean,
     isMenuSideBarOpen: false as boolean,

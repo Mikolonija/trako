@@ -1,11 +1,11 @@
 export enum HabitStatus {
-  Unfinished = "unfinished",
-  Complete = "complete",
+  Unfinished = 'unfinished',
+  Complete = 'complete',
 }
 
 export enum HabitActivationStatus {
-  Disable = "disabled",
-  Enable = "enabled",
+  Disable = 'disabled',
+  Enable = 'enabled',
 }
 
 export enum HabitErrorID {

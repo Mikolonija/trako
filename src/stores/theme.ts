@@ -1,9 +1,9 @@
-import { useLocalStorage } from "@vueuse/core";
-import { defineStore } from "pinia";
-import { ThemeType } from "@/types/enums/theme";
-import { defaultTheme, localStorageTheme, themeDataAttribute } from "@/config";
+import { useLocalStorage } from '@vueuse/core';
+import { defineStore } from 'pinia';
+import { ThemeType } from '@/types/enums/theme';
+import { defaultTheme, localStorageTheme, themeDataAttribute } from '@/config';
 
-const useThemeStore = defineStore("theme", {
+const useThemeStore = defineStore('theme', {
   state: () => ({
     theme: useLocalStorage<ThemeType>(localStorageTheme, defaultTheme),
   }),

@@ -1,4 +1,4 @@
-import type { HabitActivationStatus, HabitStatus } from "@/types/enums/habit";
+import type { HabitActivationStatus, HabitStatus } from '@/types/enums/habit';
 
 export interface Habit {
   id: string;

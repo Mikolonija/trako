@@ -1,10 +1,10 @@
-import { defineStore } from "pinia";
-import { cleanSpaces } from "@/utils/helpers";
-import type { Habit, HabitErrorMessage, Time } from "@/types/interfaces/habit";
-import { HabitErrorID, SpaceCleanOption } from "@/types/enums/habit";
-import { defaultMaxNameLength } from "@/config";
+import { defineStore } from 'pinia';
+import { cleanSpaces } from '@/utils/helpers';
+import type { Habit, HabitErrorMessage, Time } from '@/types/interfaces/habit';
+import { HabitErrorID, SpaceCleanOption } from '@/types/enums/habit';
+import { defaultMaxNameLength } from '@/config';
 
-const useHabitFormStore = defineStore("habitForm", {
+const useHabitFormStore = defineStore('habitForm', {
   state: () => ({
     habitForm: {} as Habit,
     habitFormPreview: {} as Habit,
@@ -41,8 +41,7 @@ const useHabitFormStore = defineStore("habitForm", {
 
     resetNameErrors(): void {
       this.errorMessage = this.errorMessage.filter(
-        (error) =>
-          error.id !== HabitErrorID.NameLength && error.id !== HabitErrorID.NameEmpty
+        (error) => error.id !== HabitErrorID.NameLength && error.id !== HabitErrorID.NameEmpty,
       );
       this.timerErrorStyleState.name = false;
     },
@@ -50,8 +49,7 @@ const useHabitFormStore = defineStore("habitForm", {
     resetDateError(): void {
       this.errorMessage = this.errorMessage.filter(
         (error) =>
-          error.id !== HabitErrorID.StartDateInvalid &&
-          error.id !== HabitErrorID.EndDateInvalid
+          error.id !== HabitErrorID.StartDateInvalid && error.id !== HabitErrorID.EndDateInvalid,
       );
       this.timerErrorStyleState.startDate = false;
       this.timerErrorStyleState.endDate = false;
@@ -66,7 +64,7 @@ const useHabitFormStore = defineStore("habitForm", {
 
     resetTimeError(): void {
       this.errorMessage = this.errorMessage.filter(
-        (error) => error.id !== HabitErrorID.TimeInvalid
+        (error) => error.id !== HabitErrorID.TimeInvalid,
       );
       this.timerErrorStyleState.timer = false;
     },
@@ -108,7 +106,7 @@ const useHabitFormStore = defineStore("habitForm", {
       let textWithoutSpaces = cleanSpaces(name, SpaceCleanOption.RemoveAll).length;
       if (textWithoutSpaces > this.nameMaxLength) {
         this.errorMessage.push({
-          msg: "habitForm.errors.habitNameLength",
+          msg: 'habitForm.errors.habitNameLength',
           id: HabitErrorID.NameLength,
         });
         this.timerErrorStyleState.name = true;
@@ -118,7 +116,7 @@ const useHabitFormStore = defineStore("habitForm", {
     validateName(name: string): void {
       if (!name.trim()) {
         this.errorMessage.push({
-          msg: "habitForm.errors.habitNameEmpty",
+          msg: 'habitForm.errors.habitNameEmpty',
           id: HabitErrorID.NameEmpty,
         });
       }
@@ -130,7 +128,7 @@ const useHabitFormStore = defineStore("habitForm", {
         (endTime.hours === startTime.hours && endTime.minutes <= startTime.minutes)
       ) {
         this.errorMessage.push({
-          msg: "habitForm.errors.startTimeBeforeEndTime",
+          msg: 'habitForm.errors.startTimeBeforeEndTime',
           id: HabitErrorID.TimeInvalid,
         });
         this.timerErrorStyleState.timer = true;
@@ -142,7 +140,7 @@ const useHabitFormStore = defineStore("habitForm", {
       yesterday.setDate(yesterday.getDate() - 1);
       if (startDate < yesterday) {
         this.errorMessage.push({
-          msg: "habitForm.errors.endDateCurrentError",
+          msg: 'habitForm.errors.endDateCurrentError',
           id: HabitErrorID.EndDateInvalid,
         });
         this.timerErrorStyleState.endDate = true;
@@ -154,7 +152,7 @@ const useHabitFormStore = defineStore("habitForm", {
       yesterday.setDate(yesterday.getDate() - 1);
       if (startDate < yesterday) {
         this.errorMessage.push({
-          msg: "habitForm.errors.startDateCurrentError",
+          msg: 'habitForm.errors.startDateCurrentError',
           id: HabitErrorID.StartDateInvalid,
         });
         this.timerErrorStyleState.startDate = true;
@@ -177,9 +175,7 @@ const useHabitFormStore = defineStore("habitForm", {
     },
 
     hasNonEmptyErrors: (state): boolean => {
-      return (
-        state.errorMessage.filter((x) => x.id !== HabitErrorID.NameEmpty).length !== 0
-      );
+      return state.errorMessage.filter((x) => x.id !== HabitErrorID.NameEmpty).length !== 0;
     },
   },
 });

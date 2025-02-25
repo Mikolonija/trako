@@ -53,7 +53,7 @@ Trako is a habit-tracking app that helps you stay consistent, build routines, an
 
 **Additional Tools & Plugins**:
 
-- **eslint-plugin-vue** – This plugin allows us to check the Vue files with ESLint.
+- **prettier** – This plugin allows to format files.
 - **vite-plugin-compression2** – Compression for Vite builds.
 - **vite-svg-loader** – Load SVG files as Vue components.
 
@@ -102,6 +102,14 @@ https://trako.vercel.app/
 4. **Open in the browser:**
 
 - `Click the link provided in the terminal to view the project.`
+
+## Format code
+
+- `Run the following command:`
+
+  ```sh
+  npm run format
+  ```
 
 ## Data Storage
 
