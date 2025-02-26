@@ -5,27 +5,27 @@ const routes = [
   {
     name: routerPath.home.name,
     path: routerPath.home.path,
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/pages/Home.vue'),
   },
   {
     name: routerPath.homeByDate.name,
     path: routerPath.homeByDate.path,
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/pages/Home.vue'),
   },
   {
     name: routerPath.homeByDateRange.name,
     path: routerPath.homeByDateRange.path,
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/pages/Home.vue'),
   },
   {
     name: routerPath.help.name,
     path: routerPath.help.path,
-    component: () => import('@/views/Help.vue'),
+    component: () => import('@/views/pages/Help.vue'),
   },
   {
     name: routerPath.notFound.name,
     path: routerPath.notFound.path,
-    component: () => import('@/views/NotFound.vue'),
+    component: () => import('@/views/pages/NotFound.vue'),
   },
 ];
 
