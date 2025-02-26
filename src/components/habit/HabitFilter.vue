@@ -180,6 +180,7 @@ const filterHabit = (): void => {
 const clearHabitFilter = (): void => {
   sideBarStore.closeHabitNavigationSideBar();
   router.replace(`/`);
+  filterDateRange.value = defaultHabitRange;
 };
 
 const updateHabitFilterFromRouter = (): void => {
