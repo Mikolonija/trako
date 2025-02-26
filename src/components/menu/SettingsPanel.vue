@@ -29,6 +29,7 @@
           <template v-for="option in setting.options" :key="option.value">
             <p
               tabindex="0"
+              :title="option.title"
               @keydown.enter="setting.change(option.value)"
               :class="
                 option.value === setting.active()
@@ -37,7 +38,7 @@
               "
               @click="setting.change(option.value)"
             >
-              {{ option.label }}
+              {{ option.text }}
             </p>
           </template>
         </div>
@@ -73,11 +74,13 @@ const settings = computed<Setting[]>(() => [
     options: [
       {
         value: ThemeType.DM,
-        label: !sideBarStore.isMenuSideBarCollapsed ? ThemeType.DM : t('menu.settings.darkMode'),
+        title: t('menu.settings.darkMode'),
+        text: !sideBarStore.isMenuSideBarCollapsed ? ThemeType.DM : t('menu.settings.darkMode'),
       },
       {
         value: ThemeType.LM,
-        label: !sideBarStore.isMenuSideBarCollapsed ? ThemeType.LM : t('menu.settings.lightMode'),
+        title: t('menu.settings.lightMode'),
+        text: !sideBarStore.isMenuSideBarCollapsed ? ThemeType.LM : t('menu.settings.lightMode'),
       },
     ],
   },
@@ -94,13 +97,15 @@ const settings = computed<Setting[]>(() => [
     options: [
       {
         value: LanguageType.EN,
-        label: !sideBarStore.isMenuSideBarCollapsed
+        title: t('menu.settings.languages.en'),
+        text: !sideBarStore.isMenuSideBarCollapsed
           ? LanguageType.EN
           : t('menu.settings.languages.en'),
       },
       {
         value: LanguageType.LT,
-        label: !sideBarStore.isMenuSideBarCollapsed
+        title: t('menu.settings.languages.lt'),
+        text: !sideBarStore.isMenuSideBarCollapsed
           ? LanguageType.LT
           : t('menu.settings.languages.lt'),
       },

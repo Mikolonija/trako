@@ -7,6 +7,7 @@
           :aria-label="t('buttonsLabels.viewHabitDetails')"
           class="cancel-btn btn-size font-montserrat-14-bold"
           @click="openMyHabitModal()"
+          :title="t('progress.myProgress')"
           @keyup.esc="modalStore.hideModal()"
         >
           {{ `${habitCompletionStats.completed}/${habitCompletionStats.total}` }}

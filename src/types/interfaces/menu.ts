@@ -9,7 +9,8 @@ export interface NavigationList {
 
 interface SettingOption {
   value: string;
-  label: string;
+  title: string;
+  text: string;
 }
 
 export interface Setting {

@@ -29,6 +29,7 @@
             <template #actions>
               <button
                 type="button"
+                :title="t('buttonsLabels.enableHabit')"
                 :aria-label="t('buttonsLabels.enableHabit')"
                 class="cancel-btn-round layout-center"
                 @keyup.esc="modalStore.hideModal()"
@@ -44,6 +45,7 @@
               </button>
               <button
                 type="button"
+                :title="t('buttonsLabels.disableHabit')"
                 :aria-label="t('buttonsLabels.disableHabit')"
                 @keyup.esc="modalStore.hideModal()"
                 class="cancel-btn-round layout-center"
@@ -59,6 +61,7 @@
               </button>
               <button
                 type="button"
+                :title="t('buttonsLabels.editHabit')"
                 :aria-label="t('buttonsLabels.editHabit')"
                 @keyup.esc="modalStore.hideModal()"
                 v-if="habitStore.isHabitActive"
@@ -74,6 +77,7 @@
               </button>
               <button
                 type="button"
+                :title="t('buttonsLabels.deleteHabit')"
                 :aria-label="t('buttonsLabels.deleteHabit')"
                 @keyup.esc="modalStore.hideModal()"
                 class="cancel-btn-round"
@@ -88,6 +92,7 @@
               </button>
               <button
                 type="button"
+                :title="t('buttonsLabels.markHabit')"
                 :aria-label="t('buttonsLabels.markHabit')"
                 @keyup.esc="modalStore.hideModal()"
                 class="cancel-btn-round layout-center"
@@ -105,6 +110,7 @@
               </button>
               <button
                 type="button"
+                :title="t('buttonsLabels.unmarkHabit')"
                 :aria-label="t('buttonsLabels.unmarkHabit')"
                 @keyup.esc="modalStore.hideModal()"
                 class="cancel-btn-round layout-center"

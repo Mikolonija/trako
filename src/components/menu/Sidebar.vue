@@ -31,6 +31,7 @@
             v-for="item in menuItems"
             :key="item.path"
             :to="item.path"
+            :title="t(item.text)"
             :class="{
               collapsed: !sideBarStore.isMenuSideBarCollapsed,
               'active-link': item.activeLink.includes(route.name as string),
