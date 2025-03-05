@@ -42,6 +42,7 @@ Trako is a habit-tracking app that helps you stay consistent, build routines, an
 - **typescript** – A typed superset of JavaScript.
 - **vite** – Fast development server and build tool optimized for modern web projects.
 - **vue-tsc** – TypeScript type-checking tool for Vue.js .
+- **vitest** – A testing framework.
 
 **UI & Utilities**:
 
@@ -111,6 +112,14 @@ https://trako.vercel.app/
   npm run format
   ```
 
+## Run test
+
+- `Run the following command:`
+
+  ```sh
+  npm run test
+  ```
+
 ## Data Storage
 
 - `Habits are stored in localStorage.`
@@ -123,10 +132,15 @@ https://trako.vercel.app/
 
 ### `src/`
 
-- `config.js`:Project configuration file.
+- `config.ts`:Project configuration file.
 - `global.d.ts`: Global definitions.
 - `I18n.ts`: Internationalization configuration file.
 - `main.ts`: Application initialization and mounting file.
+
+#### `__tests__/`
+
+- `habits.test.ts`: Testing CRUD functionality for habits.
+- `settings.test.ts`: Testing theme and language settings.
 
 #### `assets/`
 
@@ -202,8 +216,6 @@ https://trako.vercel.app/
 - `feature.ts`: Feature related interfaces.
 - `menu.ts`: Menu related interfaces.
 
-#### `/types`
-
 #### `/utils`
 
 - `helpers.ts`: Utility functions.
@@ -218,7 +230,7 @@ https://trako.vercel.app/
 ### `/`
 
 - `.gitignore`: Specifies files and directories to ignore in Git.
-- `eslint.config.js`: Configuration file for ESLint.
+- `.prettierrc`: Configuration file for code format.
 - `index.html`: The main HTML file that serves as the entry point for the web app.
 - `package.json`: Manages project dependencies and scripts.
 - `README.md`: Project documentation.
