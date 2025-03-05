@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "format": "prettier --write .",
     "test": "vitest",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:test": "cypress run"
   },
   "dependencies": {
     "@kyvg/vue3-notification": "^3.4.1",

@@ -126,15 +126,8 @@ https://trako.vercel.app/
 - `Run the following command:`
 
   ```sh
-  npm run cy:open
+  npm run cy:test
   ```
-
-- `Make sure the project is running before proceeding.`
-- `Choose the "E2E" card in the Cypress interface.`
-- `Select the specs by choosing one of the following test files:`
-- habit
-- router
-- settings
 
 ## Data Storage
 
