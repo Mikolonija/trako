@@ -1,6 +1,6 @@
 import { cyTestWebsiteLink, routerPath } from '../../src/config';
 
-describe('Router Navigation Tests', () => {
+describe('Router Tests', () => {
   describe('Navigate to Help Page', () => {
     it('should visit the help page and verify the correct URL', () => {
       cy.visit(`${cyTestWebsiteLink}${routerPath.help.path}`);
