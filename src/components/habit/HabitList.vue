@@ -60,6 +60,7 @@
                 />
               </button>
               <button
+                data-testid="cy-open-edit-habit-modal-btn"
                 type="button"
                 :title="t('buttonsLabels.editHabit')"
                 :aria-label="t('buttonsLabels.editHabit')"
@@ -76,6 +77,7 @@
                 />
               </button>
               <button
+                data-testid="cy-open-delete-habit-modal-btn"
                 type="button"
                 :title="t('buttonsLabels.deleteHabit')"
                 :aria-label="t('buttonsLabels.deleteHabit')"
@@ -91,6 +93,7 @@
                 />
               </button>
               <button
+                data-testid="cy-open-mark-habit-modal-btn"
                 type="button"
                 :title="t('buttonsLabels.markHabit')"
                 :aria-label="t('buttonsLabels.markHabit')"

@@ -46,6 +46,7 @@
           :aria-label="t('buttonsLabels.submitForm')"
           :disabled="!habitFormStore.isFormValid || !habitFormStore.isChanged()"
           @click="submit()"
+          data-testid="cy-submit-habit"
           class="modal-btn-confirm font-montserrat-14-bold"
         >
           {{ modalStore.btnSubmitText }}

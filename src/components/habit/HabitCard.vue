@@ -1,5 +1,5 @@
 <template>
-  <div class="habit-card-item">
+  <div class="habit-card-item" data-testid="cy-current-habit-card">
     <div class="habit-card-actions">
       <div class="layout-center">
         <button

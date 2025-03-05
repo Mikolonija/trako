@@ -14,6 +14,7 @@ const defaultHabitSelected = HabitActivationStatus.Enable;
 const defaultLanguage = LanguageType.EN;
 const defaultTheme = ThemeType.LM;
 const defaultMaxNameLength = 255;
+const cyTestWebsiteLink = 'https://trako.vercel.app';
 
 const repeatDaysDefault = [
   { msg: 'calendar.days.mo', day: 1, id: 0 },
@@ -45,6 +46,7 @@ export {
   themeDataAttribute,
   defaultLoadedMore,
   responsiveSize,
+  cyTestWebsiteLink,
   repeatDaysDefault,
   defaultYearsDuration,
   defaultHabitRange,

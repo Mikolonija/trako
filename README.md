@@ -42,7 +42,8 @@ Trako is a habit-tracking app that helps you stay consistent, build routines, an
 - **typescript** – A typed superset of JavaScript.
 - **vite** – Fast development server and build tool optimized for modern web projects.
 - **vue-tsc** – TypeScript type-checking tool for Vue.js .
-- **vitest** – A testing framework.
+- **vitest** – A unit testing framework for fast and efficient testing of your code.
+- **cypress** – An end-to-end (E2E) testing framework used for testing the functionality and interactions of your application in a real browser environment.
 
 **UI & Utilities**:
 
@@ -112,7 +113,7 @@ https://trako.vercel.app/
   npm run format
   ```
 
-## Run test
+## Run Unit test
 
 - `Run the following command:`
 
@@ -120,11 +121,30 @@ https://trako.vercel.app/
   npm run test
   ```
 
+## Run E2E test
+
+- `Run the following command:`
+
+  ```sh
+  npm run cy:open
+  ```
+
+- `Make sure the project is running before proceeding.`
+- `Choose the "E2E" card in the Cypress interface.`
+- `Select the specs by choosing one of the following test files:`
+- habit
+- router
+- settings
+
 ## Data Storage
 
 - `Habits are stored in localStorage.`
 
 ## Description of folders and files
+
+### `/cypress/e2e/`
+
+- `*`: e2e test.
 
 ### `/public`
 
@@ -231,6 +251,7 @@ https://trako.vercel.app/
 
 - `.gitignore`: Specifies files and directories to ignore in Git.
 - `.prettierrc`: Configuration file for code format.
+- `cypress.config.ts`: Cypress configuration file.
 - `index.html`: The main HTML file that serves as the entry point for the web app.
 - `package.json`: Manages project dependencies and scripts.
 - `README.md`: Project documentation.

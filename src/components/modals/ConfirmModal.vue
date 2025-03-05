@@ -33,6 +33,7 @@
         </button>
         <button
           type="button"
+          data-testid="cy-confirm-action"
           :class="[modalStore.isDeleteAction ? 'modal-btn-delete' : 'modal-btn-confirm']"
           :aria-label="t('buttonsLabels.confirmAction')"
           @click="submit()"

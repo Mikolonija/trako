@@ -21,13 +21,17 @@
           <p class="font-montserrat-16-regular settings-menu-header-title">
             {{ setting.title }}
           </p>
-          <p class="font-montserrat-16-bold settings-menu-header-text-active">
+          <p
+            class="font-montserrat-16-bold settings-menu-header-text-active"
+            :data-testid="`cy-current-setting-${setting.activeValue()}`"
+          >
             {{ setting.activeValue() }}
           </p>
         </div>
         <div class="setting-menu-lists">
           <template v-for="option in setting.options" :key="option.value">
             <p
+              :data-testid="`cy-${option.value}`"
               tabindex="0"
               :title="option.title"
               @keydown.enter="setting.change(option.value)"

@@ -65,6 +65,7 @@
           :class="{ collapsed: !sideBarStore.isMenuSideBarCollapsed }"
         >
           <button
+            data-testid="cy-resize-menu-btn"
             type="button"
             :aria-label="t('buttonsLabels.toggleSidebar')"
             class="nav-footer-collapse-btn"

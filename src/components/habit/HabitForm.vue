@@ -9,6 +9,7 @@
         </span>
       </label>
       <textarea
+        data-testid="cy-habit-name"
         @input="handleNameMaxLength()"
         ref="habitNameTextarea"
         :class="{ 'invalid-textarea': habitFormStore.timerErrorStyleState.name }"
@@ -47,7 +48,13 @@
             t('habitForm.labels.endDate')
           }}</label>
           <div class="layout-center">
-            <input type="checkbox" id="end-date" class="checkbox" v-model="isEndDate" />
+            <input
+              type="checkbox"
+              id="end-date"
+              class="checkbox"
+              v-model="isEndDate"
+              data-testid="cy-habit-end-date"
+            />
           </div>
         </div>
         <VueDatePicker
@@ -110,7 +117,13 @@
             t('habitForm.labels.endTime')
           }}</label>
           <div class="layout-center">
-            <input type="checkbox" id="end-time" class="checkbox" v-model="isEndTime" />
+            <input
+              type="checkbox"
+              id="end-time"
+              class="checkbox"
+              v-model="isEndTime"
+              data-testid="cy-habit-end-time"
+            />
           </div>
         </div>
         <VueDatePicker
