@@ -118,7 +118,7 @@ https://trako.vercel.app/
 - `Run the following command:`
 
   ```sh
-  npm run test
+  npm run test:unit
   ```
 
 ## Run E2E test
@@ -126,7 +126,7 @@ https://trako.vercel.app/
 - `Run the following command:`
 
   ```sh
-  npm run cy:test
+  npm run test:e2e
   ```
 
 ## Data Storage
