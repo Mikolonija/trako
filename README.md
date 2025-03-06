@@ -208,14 +208,14 @@ https://trako.vercel.app/
 - `colors.scss`: Color variables.
 - `dataPicker.scss`: Styles for the date picker.
 - `fonts.scss`: Typography styles.
+- `habitStatus.scss`: Habit status styles.
 - `layout.scss`: Layout styles.
 - `loader.scss`: Loader styles.
 - `mixins.scss`: Stores reusable SCSS mixins.
 - `modal.scss`: Modal styles.
 - `notification.scss`: Styles for notification pop-ups.
-- `radius.scss`: Border radius variables.
 - `reset.scss`: CSS resets.
-- `spacings.scss`: Spacings variables.
+- `variables.scss`: CSS variables.
 
 #### `types/enums`
 
@@ -225,8 +225,8 @@ https://trako.vercel.app/
 
 #### `types/interfaces`
 
-- `habit.ts`: Habit related interfaces.
 - `feature.ts`: Feature related interfaces.
+- `habit.ts`: Habit related interfaces.
 - `menu.ts`: Menu related interfaces.
 
 #### `/utils`
@@ -236,6 +236,9 @@ https://trako.vercel.app/
 #### `/views`
 
 - `App.vue`: Main page view.
+
+#### `/views/pages`
+
 - `Help.vue`: Help page view.
 - `Home.vue`: Home page view.
 - `NotFound.vue`: NotFound page view.
@@ -246,9 +249,12 @@ https://trako.vercel.app/
 - `.prettierrc`: Configuration file for code format.
 - `cypress.config.ts`: Cypress configuration file.
 - `index.html`: The main HTML file that serves as the entry point for the web app.
-- `package.json`: Manages project dependencies and scripts.
+- `LICENSE`: The LICENSE file.
+- `package-lock.json`: Locks the exact versions of project dependencies to ensure consistent installations across environments.
+- `package.json`: Manages project metadata, dependencies, and scripts used in the project.
 - `README.md`: Project documentation.
 - `tsconfig.app.json`: TypeScript configuration for the app.
 - `tsconfig.json`: The main TypeScript configuration file.
 - `tsconfig.node.json`: TypeScript configuration for Node.js.
+- `vercel.json`: vercel configuration file.
 - `vite.config.ts`: Configuration file for Vite.
