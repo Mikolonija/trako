@@ -8,18 +8,12 @@
       <HabitFilter />
     </div>
   </div>
-  <Teleport to="#modal">
-    <component v-if="modalStore.show" :is="modalStore.component" />
-  </Teleport>
 </template>
 
 <script setup lang="ts">
 import HabitFilter from '@/components/habit/HabitFilter.vue';
-import { useModalStore } from '@/stores/modal';
 import HabitCreateCard from '@/components/habit/HabitCreateCard.vue';
 import HabitList from '@/components/habit/HabitList.vue';
-
-const modalStore = useModalStore();
 </script>
 
 <style scoped lang="scss">

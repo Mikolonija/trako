@@ -1,9 +1,7 @@
 <template>
   <div class="app-layout">
     <Header />
-    <Teleport to="#sidebar">
-      <SideBar />
-    </Teleport>
+    <Teleport to="#sidebar"><SideBar /></Teleport>
     <main class="app-main">
       <div class="loader-overlay" v-if="isLoading">
         <div class="loader" />
@@ -13,6 +11,7 @@
       </template>
     </main>
   </div>
+  <Teleport to="#modal"><component v-if="modalStore.show" :is="modalStore.component" /></Teleport>
   <notifications class="notification" />
 </template>
 
@@ -22,7 +21,9 @@ import { onMounted, ref } from 'vue';
 import SideBar from '@/components/menu/Sidebar.vue';
 import Header from '@/components/Header.vue';
 import { useRouter } from 'vue-router';
+import { useModalStore } from '@/stores/modal';
 
+const modalStore = useModalStore();
 const themeStore = useThemeStore();
 const isLoading = ref<boolean>(true);
 const router = useRouter();
