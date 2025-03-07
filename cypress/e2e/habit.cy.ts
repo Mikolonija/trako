@@ -27,6 +27,37 @@ describe('Habit Tests', () => {
     cy.get('[data-testid="cy-current-habit-card"]').should('be.visible');
   });
 
+  it('Unmark', () => {
+    cy.get('[data-testid="cy-open-mark-habit-modal-btn"]').should('be.visible').click();
+    cy.get('[data-testid="cy-confirm-action"]').should('be.visible').click();
+    cy.get('[data-testid="cy-open-unmark-habit-modal-btn"]').should('be.visible').click();
+    cy.get('[data-testid="cy-confirm-action"]').should('be.visible').click();
+    cy.get('[data-testid="cy-current-habit-card"]').should('be.visible');
+  });
+
+  it('Disable', () => {
+    cy.get('[data-testid="cy-open-disable-habit-modal-btn"]').should('be.visible').click();
+    cy.get('[data-testid="cy-confirm-action"]').should('be.visible').click();
+    cy.get('[data-testid="cy-current-habit-card"]').should('not.exist');
+
+    cy.get('[data-testid="cy-habit-inactive-section"]').should('be.visible').click();
+    cy.get('[data-testid="cy-current-habit-card"]').should('be.visible');
+  });
+
+  it('Enable', () => {
+    cy.get('[data-testid="cy-open-disable-habit-modal-btn"]').should('be.visible').click();
+    cy.get('[data-testid="cy-confirm-action"]').should('be.visible').click();
+    cy.get('[data-testid="cy-current-habit-card"]').should('not.exist');
+
+    cy.get('[data-testid="cy-habit-inactive-section"]').should('be.visible').click();
+    cy.get('[data-testid="cy-open-enable-habit-modal-btn"]').should('be.visible').click();
+    cy.get('[data-testid="cy-confirm-action"]').should('be.visible').click();
+    cy.get('[data-testid="cy-current-habit-card"]').should('not.exist');
+
+    cy.get('[data-testid="cy-habit-active-section"]').should('be.visible').click();
+    cy.get('[data-testid="cy-current-habit-card"]').should('be.visible');
+  });
+
   it('Delete', () => {
     cy.get('[data-testid="cy-open-delete-habit-modal-btn"]').should('be.visible').click();
     cy.get('[data-testid="cy-confirm-action"]').should('be.visible').click();

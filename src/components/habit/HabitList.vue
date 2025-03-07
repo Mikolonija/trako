@@ -8,6 +8,7 @@
     </div>
     <div class="habit-menu">
       <p
+        data-testid="cy-habit-active-section"
         class="habit-menu-item font-montserrat-16-regular"
         :class="{ active: habitStore.isHabitActive }"
         @click="changeSelection(HabitActivationStatus.Enable)"
@@ -15,6 +16,7 @@
         {{ t('habitList.selected.active') }}
       </p>
       <p
+        data-testid="cy-habit-inactive-section"
         class="habit-menu-item font-montserrat-16-regular"
         :class="{ active: !habitStore.isHabitActive }"
         @click="changeSelection(HabitActivationStatus.Disable)"
@@ -29,6 +31,7 @@
             <template #actions>
               <button
                 type="button"
+                data-testid="cy-open-enable-habit-modal-btn"
                 :title="t('buttonsLabels.enableHabit')"
                 :aria-label="t('buttonsLabels.enableHabit')"
                 class="cancel-btn-round layout-center"
@@ -45,6 +48,7 @@
               </button>
               <button
                 type="button"
+                data-testid="cy-open-disable-habit-modal-btn"
                 :title="t('buttonsLabels.disableHabit')"
                 :aria-label="t('buttonsLabels.disableHabit')"
                 @keyup.esc="modalStore.hideModal()"
@@ -113,6 +117,7 @@
               </button>
               <button
                 type="button"
+                data-testid="cy-open-unmark-habit-modal-btn"
                 :title="t('buttonsLabels.unmarkHabit')"
                 :aria-label="t('buttonsLabels.unmarkHabit')"
                 @keyup.esc="modalStore.hideModal()"
