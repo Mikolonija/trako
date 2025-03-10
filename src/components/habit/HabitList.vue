@@ -7,22 +7,24 @@
       </div>
     </div>
     <div class="habit-menu">
-      <p
+      <button
+        :aria-label="t('buttonsLabels.activeHabits')"
         data-testid="cy-habit-active-section"
         class="habit-menu-item font-montserrat-16-regular"
         :class="{ active: habitStore.isHabitActive }"
         @click="changeSelection(HabitActivationStatus.Enable)"
       >
         {{ t('habitList.selected.active') }}
-      </p>
-      <p
+      </button>
+      <button
+        :aria-label="t('buttonsLabels.inactiveHabits')"
         data-testid="cy-habit-inactive-section"
         class="habit-menu-item font-montserrat-16-regular"
         :class="{ active: !habitStore.isHabitActive }"
         @click="changeSelection(HabitActivationStatus.Disable)"
       >
         {{ t('habitList.selected.inactive') }}
-      </p>
+      </button>
     </div>
     <div class="habit-list-main">
       <div class="habit-list-card">
@@ -139,7 +141,11 @@
         </template>
         <template v-else>
           <div class="layout-center empty-habits-image-container">
-            <button @click="openCreateModal()" class="empty-habits-btn">
+            <button
+              @click="openCreateModal()"
+              class="empty-habits-btn"
+              :aria-label="t('buttonsLabels.openCreateHabitModal')"
+            >
               <SvgImage
                 :alt="t('imagesAlt.emptyImg')"
                 name="empty_habits"
@@ -370,11 +376,16 @@ const openEditModal = (habit: Habit): void => {
   &-item {
     padding: 0 0 $spacing-small 0;
     cursor: pointer;
+    background: transparent;
+    color: var(--color);
+    border-bottom: solid 2px transparent;
   }
 
   &-item.active {
     font-weight: 600;
-    border-bottom: solid 2px var(--color);
+    border-color: var(--color);
+    background: transparent;
+    color: var(--color);
   }
 }
 
@@ -389,7 +400,6 @@ const openEditModal = (habit: Habit): void => {
 .empty-habits-image-container {
   width: 100%;
 }
-
 .empty-habits-btn {
   background: transparent;
   width: auto;

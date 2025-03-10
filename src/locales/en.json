@@ -188,7 +188,9 @@
     "filterHabits": "Apply habit filter",
     "toggleHabitNavigationSidebar": "Toggle habit navigation sidebar",
     "openCreateHabitModal": "Open create habit modal",
-    "viewHabitDetails": "View habit details"
+    "viewHabitDetails": "View habit details",
+    "activeHabits": "Go to active habits list",
+    "inactiveHabits": "Go to inactive habits list"
   },
   "imagesAlt": {
     "emblemImg": "Company logo featuring a triangle",

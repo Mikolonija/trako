@@ -210,7 +210,9 @@
     "filterHabits": "Taikyti įpročio filtrą",
     "toggleHabitNavigationSidebar": "Perjungti įpročių navigacijos šoninį meniu",
     "openCreateHabitModal": "Atidaryti įpročio kūrimo langą",
-    "viewHabitDetails": "Peržiūrėti įpročio detales"
+    "viewHabitDetails": "Peržiūrėti įpročio detales",
+    "activeHabits": "Eiti į aktyvių įpročių sąrašą",
+    "inactiveHabits": "Eiti į neaktyvių įpročių sąrašą"
   },
   "features": {
     "userFriendly": {
