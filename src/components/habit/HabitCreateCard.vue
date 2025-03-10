@@ -8,8 +8,8 @@
     </p>
     <div class="habit-info-card-btn-position">
       <button
-        data-testid="cy-open-create-habit-modal-btn"
         type="button"
+        data-testid="cy-open-create-habit-modal-btn"
         :aria-label="t('buttonsLabels.openCreateHabitModal')"
         class="confirm-btn font-montserrat-16-bold"
         @click="openCreateHabitModal()"

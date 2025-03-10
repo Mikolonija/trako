@@ -8,6 +8,7 @@
     </div>
     <div class="habit-menu">
       <button
+        type="button"
         :aria-label="t('buttonsLabels.activeHabits')"
         data-testid="cy-habit-active-section"
         class="habit-menu-item font-montserrat-16-regular"
@@ -17,6 +18,7 @@
         {{ t('habitList.selected.active') }}
       </button>
       <button
+        type="button"
         :aria-label="t('buttonsLabels.inactiveHabits')"
         data-testid="cy-habit-inactive-section"
         class="habit-menu-item font-montserrat-16-regular"
@@ -66,8 +68,8 @@
                 />
               </button>
               <button
-                data-testid="cy-open-edit-habit-modal-btn"
                 type="button"
+                data-testid="cy-open-edit-habit-modal-btn"
                 :title="t('buttonsLabels.editHabit')"
                 :aria-label="t('buttonsLabels.editHabit')"
                 @keyup.esc="modalStore.hideModal()"
@@ -83,8 +85,8 @@
                 />
               </button>
               <button
-                data-testid="cy-open-delete-habit-modal-btn"
                 type="button"
+                data-testid="cy-open-delete-habit-modal-btn"
                 :title="t('buttonsLabels.deleteHabit')"
                 :aria-label="t('buttonsLabels.deleteHabit')"
                 @keyup.esc="modalStore.hideModal()"
@@ -99,8 +101,8 @@
                 />
               </button>
               <button
-                data-testid="cy-open-mark-habit-modal-btn"
                 type="button"
+                data-testid="cy-open-mark-habit-modal-btn"
                 :title="t('buttonsLabels.markHabit')"
                 :aria-label="t('buttonsLabels.markHabit')"
                 @keyup.esc="modalStore.hideModal()"
@@ -142,6 +144,7 @@
         <template v-else>
           <div class="layout-center empty-habits-image-container">
             <button
+              type="button"
               @click="openCreateModal()"
               class="empty-habits-btn"
               :aria-label="t('buttonsLabels.openCreateHabitModal')"
