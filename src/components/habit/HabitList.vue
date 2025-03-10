@@ -398,10 +398,8 @@ const openEditModal = (habit: Habit): void => {
 }
 
 .empty-habits-image {
-  cursor: pointer;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: 300px;
+  height: 300px;
 }
 
 .load-more {
