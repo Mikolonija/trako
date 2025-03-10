@@ -150,11 +150,6 @@ https://trako.vercel.app/
 - `I18n.ts`: Internationalization configuration file.
 - `main.ts`: Application initialization and mounting file.
 
-#### `__tests__/`
-
-- `habits.test.ts`: Testing CRUD functionality for habits.
-- `settings.test.ts`: Testing theme and language settings.
-
 #### `assets/`
 
 - `*`: Project images.
@@ -196,10 +191,13 @@ https://trako.vercel.app/
 #### `stores/`
 
 - `habit.ts`: Manages habit CRUD operations.
+- `habit.test.ts`: Testing CRUD functionality for habits.
 - `habitForm.ts`: Manages habit form state and validation for creating and updating habits.
+- `language.test.ts`: Testing language settings.
 - `language.ts`: Manages language preferences.
 - `modal.ts`: Manages modal functionality.
 - `sideBar.ts`: Manages sidebar state.
+- `theme.test.ts`: Testing theme settings.
 - `theme.ts`: Manages theme settings.
 
 #### `styles/`
