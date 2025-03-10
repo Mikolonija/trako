@@ -134,7 +134,7 @@ const items = [
   position: relative;
   max-width: $breakpoint-tablet;
   margin: 0 auto;
-
+  outline: none;
   @include media-query(tablet) {
     border: none;
   }

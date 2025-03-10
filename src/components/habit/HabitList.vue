@@ -139,13 +139,14 @@
         </template>
         <template v-else>
           <div class="layout-center empty-habits-image-container">
-            <SvgImage
-              :alt="t('imagesAlt.emptyImg')"
-              @click="openCreateModal()"
-              name="empty_habits"
-              folder="globals"
-              class="empty-habits-image"
-            />
+            <button @click="openCreateModal()" class="empty-habits-btn">
+              <SvgImage
+                :alt="t('imagesAlt.emptyImg')"
+                name="empty_habits"
+                folder="globals"
+                class="empty-habits-image"
+              />
+            </button>
           </div>
         </template>
       </div>
@@ -387,6 +388,13 @@ const openEditModal = (habit: Habit): void => {
 
 .empty-habits-image-container {
   width: 100%;
+}
+
+.empty-habits-btn {
+  background: transparent;
+  width: auto;
+  padding: 0;
+  height: auto;
 }
 
 .empty-habits-image {

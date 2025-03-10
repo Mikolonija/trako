@@ -70,7 +70,6 @@
             :aria-label="t('buttonsLabels.toggleSidebar')"
             class="nav-footer-collapse-btn"
             @click="sideBarStore.resizeMenuSideBar()"
-            tabindex="0"
           >
             <SvgImage
               :alt="t('imagesAlt.arrowImg')"
