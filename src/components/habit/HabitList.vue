@@ -399,7 +399,7 @@ const openEditModal = (habit: Habit): void => {
 
 .empty-habits-image {
   width: 300px;
-  height: 300px;
+  height: auto;
 }
 
 .load-more {
