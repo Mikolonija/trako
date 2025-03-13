@@ -24,8 +24,11 @@
       </div>
       <div class="modal-main">
         <HabitForm />
-        <div class="modal-error-container" v-if="habitFormStore.hasNonEmptyErrors">
-          <div v-for="(message, index) in habitFormStore.nonEmptyErrors" :key="index">
+        <div
+          class="modal-error-container"
+          v-if="habitFormStore.listOutNameEmptyErrors.length !== 0"
+        >
+          <div v-for="(message, index) in habitFormStore.listOutNameEmptyErrors" :key="index">
             <span class="modal-error-message font-montserrat-12-bold">
               {{ `${index + 1} ${t(message.msg)}` }}
             </span>
@@ -44,7 +47,7 @@
         <button
           type="button"
           :aria-label="t('buttonsLabels.submitForm')"
-          :disabled="!habitFormStore.isFormValid || !habitFormStore.isChanged()"
+          :disabled="!habitFormStore.isHabitFormValid || !habitFormStore.isChanged()"
           @click="submit()"
           data-testid="cy-submit-habit"
           class="modal-btn-confirm font-montserrat-14-bold"

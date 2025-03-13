@@ -166,16 +166,12 @@ const useHabitFormStore = defineStore('habitForm', {
   },
 
   getters: {
-    isFormValid: (state): boolean => {
+    isHabitFormValid: (state): boolean => {
       return state.errorMessage.length === 0;
     },
 
-    nonEmptyErrors: (state): HabitErrorMessage[] => {
+    listOutNameEmptyErrors: (state): HabitErrorMessage[] => {
       return state.errorMessage.filter((x) => x.id !== HabitErrorID.NameEmpty);
-    },
-
-    hasNonEmptyErrors: (state): boolean => {
-      return state.errorMessage.filter((x) => x.id !== HabitErrorID.NameEmpty).length !== 0;
     },
   },
 });
