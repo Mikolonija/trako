@@ -21,14 +21,14 @@ const getStatus = (habit: Habit): HabitStatusInfo => {
   const yesterday = new Date();
   yesterday.setDate(yesterday.getDate() - 1);
   const deadline = new Date(habit.deadline);
-  if (
+  if (habit.status === HabitStatus.Complete)
+    return { class: 'habit-status-complete', msg: 'status.complete' };
+  else if (
     habit.isActive === HabitActivationStatus.Enable &&
     yesterday > deadline &&
     habit.status === HabitStatus.Unfinished
   )
     return { class: 'habit-status-expired', msg: 'status.expired' };
-  if (habit.status === HabitStatus.Complete)
-    return { class: 'habit-status-complete', msg: 'status.complete' };
   else if (habit.isActive === HabitActivationStatus.Enable)
     return { class: 'habit-status-unfinished', msg: 'status.unfinished' };
   else return { class: 'habit-status-disabled', msg: 'status.disabled' };
