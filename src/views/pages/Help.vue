@@ -40,7 +40,7 @@ import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 
-const items = [
+const items: FeatureItem[] = [
   {
     id: 1,
     title: 'features.userFriendly.title',
@@ -107,7 +107,7 @@ const items = [
     description: 'features.routerNavigation.description',
     symbol: '🔗',
   },
-] as FeatureItem[];
+];
 </script>
 
 <style scoped lang="scss">

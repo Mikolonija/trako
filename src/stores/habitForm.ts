@@ -10,12 +10,12 @@ const useHabitFormStore = defineStore('habitForm', {
     habitFormPreview: {} as Habit,
     errorMessage: [] as HabitErrorMessage[],
     timerErrorStyleState: {
-      timer: false as boolean,
-      startDate: false as boolean,
-      endDate: false as boolean,
-      name: false as boolean,
+      timer: false,
+      startDate: false,
+      endDate: false,
+      name: false,
     },
-    nameMaxLength: defaultMaxNameLength as number,
+    nameMaxLength: defaultMaxNameLength,
   }),
 
   actions: {
@@ -95,7 +95,7 @@ const useHabitFormStore = defineStore('habitForm', {
     },
 
     resetAllErrors(): void {
-      this.errorMessage = [] as HabitErrorMessage[];
+      this.errorMessage = [];
       this.timerErrorStyleState.timer = false;
       this.timerErrorStyleState.startDate = false;
       this.timerErrorStyleState.endDate = false;

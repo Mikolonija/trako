@@ -90,7 +90,7 @@ const { t } = useI18n();
 const modalStore = useModalStore();
 const habitStore = useHabitStore();
 const modal = ref(null);
-const itemsToShow = ref<number>(defaultLoadedMore);
+const itemsToShow = ref(defaultLoadedMore);
 
 const loadMore = (): void => {
   itemsToShow.value += defaultLoadedMore;

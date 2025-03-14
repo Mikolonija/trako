@@ -7,9 +7,9 @@ const isTablet = () => window.innerWidth <= responsiveSize.breakPointTablet;
 
 const useSideBarStore = defineStore('sideBar', {
   state: () => ({
-    isMenuSideBarCollapsed: false as boolean,
-    isMenuSideBarOpen: false as boolean,
-    isHabitNavigationSideBarCollapsed: false as boolean,
+    isMenuSideBarCollapsed: false,
+    isMenuSideBarOpen: false,
+    isHabitNavigationSideBarCollapsed: false,
   }),
 
   actions: {
