@@ -40,8 +40,8 @@ const useHabitStore = defineStore('habit', {
   state: () => ({
     habits: useLocalStorage<Habit[]>(localStorageHabits, []),
     habit: newHabit(),
-    dateRange: defaultHabitRange as Date[],
-    loadedMore: defaultLoadedMore as number,
+    dateRange: defaultHabitRange,
+    loadedMore: defaultLoadedMore,
     habitSelected: defaultHabitSelected,
   }),
 
@@ -186,8 +186,8 @@ const useHabitStore = defineStore('habit', {
 
     resetHabitState(): void {
       this.habit = newHabit();
-      this.dateRange = defaultHabitRange as Date[];
-      this.loadedMore = defaultLoadedMore as number;
+      this.dateRange = defaultHabitRange;
+      this.loadedMore = defaultLoadedMore;
       this.habitSelected = HabitActivationStatus.Enable;
     },
   },

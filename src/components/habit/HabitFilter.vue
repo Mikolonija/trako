@@ -79,7 +79,7 @@ const { locale, t } = useI18n();
 const themeStore = useThemeStore();
 const habitStore = useHabitStore();
 const sideBarStore = useSideBarStore();
-const filterDateRange = ref<Date[]>(defaultHabitRange);
+const filterDateRange = ref(defaultHabitRange);
 const maxHabitDate = new Date(
   new Date().setFullYear(new Date().getFullYear() + defaultYearsDuration),
 );
@@ -148,11 +148,11 @@ const inValiDate = (): Date[] => {
 const handleMultipleDate = (params: RouteParamsGeneric): Date[] | null => {
   if (params.startDate && params.endDate) {
     if (
-      isValidDate(params.startDate as string) === true &&
-      isValidDate(params.endDate as string) === true
+      isValidDate(String(params.startDate)) === true &&
+      isValidDate(String(params.endDate)) === true
     ) {
-      const startDate: Date = new Date(params.startDate as string);
-      const endDate: Date = new Date(params.endDate as string);
+      const startDate: Date = new Date(String(params.startDate));
+      const endDate: Date = new Date(String(params.endDate));
       return validateDateRange(startDate, endDate);
     } else return inValiDate();
   }
@@ -161,8 +161,8 @@ const handleMultipleDate = (params: RouteParamsGeneric): Date[] | null => {
 
 const handleSingleDate = (params: RouteParamsGeneric): Date[] | null => {
   if (params.date) {
-    if (isValidDate(params.date as string) === true) {
-      const currentDate: Date = new Date(params.date as string);
+    if (isValidDate(String(params.date)) === true) {
+      const currentDate: Date = new Date(String(params.date));
       return validateCurrentRange(currentDate);
     } else return inValiDate();
   }

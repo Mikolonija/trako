@@ -25,7 +25,7 @@ import { useModalStore } from '@/stores/modal';
 
 const modalStore = useModalStore();
 const themeStore = useThemeStore();
-const isLoading = ref<boolean>(true);
+const isLoading = ref(true);
 const router = useRouter();
 
 router.beforeEach((_, __, next) => {

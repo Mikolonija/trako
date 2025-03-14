@@ -34,7 +34,7 @@
             :title="t(item.text)"
             :class="{
               collapsed: !sideBarStore.isMenuSideBarCollapsed,
-              'active-link': item.activeLink.includes(route.name as string),
+              'active-link': item.activeLink.includes(String(route.name)),
             }"
             class="layout-left-center menu-container"
             active-class="active-link"
@@ -43,7 +43,7 @@
             <SvgImage
               :alt="t(item.alt)"
               :iconSrc="
-                item.activeLink.includes(route.name as string) ? item.activeImg : item.noActiveImg
+                item.activeLink.includes(String(route.name)) ? item.activeImg : item.noActiveImg
               "
               :useComponent="false"
               width="24"
@@ -135,7 +135,7 @@ const resetPage = (): void => {
   sideBarStore.closeMenuSideBar();
   if (
     [routerPath.home.name, routerPath.homeByDate.name, routerPath.homeByDateRange.name].includes(
-      route.name as string,
+      String(route.name),
     )
   ) {
     habitStore.resetHabitState();

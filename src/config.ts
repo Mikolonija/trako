@@ -2,21 +2,22 @@ import { addDays } from 'date-fns/addDays';
 import { HabitActivationStatus } from './types/enums/habit';
 import { LanguageType } from './types/enums/language';
 import { ThemeType } from './types/enums/theme';
+import type { RepeatDay } from './types/interfaces/habit';
 
-const localStorageLanguage = 'language';
-const localStorageTheme = 'theme';
-const localStorageHabits = 'habits';
-const themeDataAttribute = 'data-theme';
-const defaultHabitRange = [new Date(), addDays(new Date(), 0)];
-const defaultLoadedMore = 8;
-const defaultYearsDuration = 2;
-const defaultHabitSelected = HabitActivationStatus.Enable;
-const defaultLanguage = LanguageType.EN;
-const defaultTheme = ThemeType.LM;
-const defaultMaxNameLength = 255;
-const cyTestWebsiteLink = 'https://trako.vercel.app';
+const localStorageLanguage: string = 'language';
+const localStorageTheme: string = 'theme';
+const localStorageHabits: string = 'habits';
+const themeDataAttribute: string = 'data-theme';
+const defaultHabitRange: Date[] = [new Date(), addDays(new Date(), 0)];
+const defaultLoadedMore: number = 8;
+const defaultYearsDuration: number = 2;
+const defaultHabitSelected: HabitActivationStatus = HabitActivationStatus.Enable;
+const defaultLanguage: LanguageType = LanguageType.EN;
+const defaultTheme: ThemeType = ThemeType.LM;
+const defaultMaxNameLength: number = 255;
+const cyTestWebsiteLink: string = 'https://trako.vercel.app';
 
-const repeatDaysDefault = [
+const repeatDaysDefault: RepeatDay[] = [
   { msg: 'calendar.days.mo', day: 1, id: 0 },
   { msg: 'calendar.days.tu', day: 2, id: 1 },
   { msg: 'calendar.days.we', day: 3, id: 2 },

@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const bubbles = ref<String[]>(['', '', '', '', '', '', '', '', '']);
+const bubbles = ref(['', '', '', '', '', '', '', '', '']);
 </script>
 
 <style scoped lang="scss">

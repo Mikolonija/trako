@@ -4,18 +4,18 @@ import { defineStore } from 'pinia';
 
 const useModalStore = defineStore('modal', {
   state: () => ({
-    show: false as boolean,
+    show: false,
     component: null as unknown,
     habitModalSubmitAction: null as ((data: Habit) => void) | null,
     confirmModalSubmitAction: null as (() => void) | null,
-    bodyText: '' as string,
-    notificationSuccessDescription: '' as string,
-    notificationSuccessTitle: '' as string,
-    btnSubmitText: '' as string,
-    title: '' as string,
-    description: '' as string,
-    habitId: '' as string,
-    isDeleteAction: false as boolean,
+    bodyText: '',
+    notificationSuccessDescription: '',
+    notificationSuccessTitle: '',
+    btnSubmitText: '',
+    title: '',
+    description: '',
+    habitId: '',
+    isDeleteAction: false,
   }),
 
   actions: {

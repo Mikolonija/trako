@@ -160,10 +160,10 @@ const habitFormStore = useHabitFormStore();
 const habitFormState = habitFormStore.habitForm;
 const repeatDays = ref<RepeatDay[]>([...habitFormState.repeatDays]);
 const habitNameTextarea = ref<HTMLTextAreaElement>();
-const isEndTime = ref<boolean>(habitFormState.endTime !== null);
 const oldEndDate = ref<Date | null>(habitFormState.endDate);
-const isEndDate = ref<boolean>(habitFormState.endDate !== null);
 const oldEndTime = ref<Time | null>(habitFormState.endTime);
+const isEndTime = ref(habitFormState.endTime !== null);
+const isEndDate = ref(habitFormState.endDate !== null);
 
 const maxHabitDate = new Date(
   new Date().setFullYear(new Date().getFullYear() + defaultYearsDuration),
